@@ -1,0 +1,322 @@
+[
+  {
+    "id": 1,
+    "text": "Stay hungry, stay foolish. 求知若饥，虚心若愚。",
+    "source": "2005年斯坦福大学毕业演讲",
+    "author": "史蒂夫·乔布斯",
+    "theme": "biographies",
+    "tags": ["求知", "谦逊", "创新"]
+  },
+  {
+    "id": 2,
+    "text": "The people who are crazy enough to think they can change the world are the ones who do. 只有那些疯狂到以为自己能改变世界的人，才能真正改变世界。",
+    "source": "苹果公司「Think Different」广告词",
+    "author": "史蒂夫·乔布斯",
+    "theme": "biographies",
+    "tags": ["改变世界", "创新", "勇气"]
+  },
+  {
+    "id": 3,
+    "text": "When something is important enough, you do it even if the odds are not in your favor. 当一件事足够重要时，即使胜算不大，你也要去做。",
+    "source": "《埃隆·马斯克传》",
+    "author": "埃隆·马斯克",
+    "theme": "biographies",
+    "tags": ["坚持", "信念", "行动力"]
+  },
+  {
+    "id": 4,
+    "text": "I would rather be optimistic and wrong than pessimistic and right. 我宁愿乐观而错误，也不愿悲观而正确。",
+    "source": "特斯拉股东大会演讲",
+    "author": "埃隆·马斯克",
+    "theme": "biographies",
+    "tags": ["乐观", "冒险", "心态"]
+  },
+  {
+    "id": 5,
+    "text": "Your brand is what other people say about you when you're not in the room. 你的品牌就是当你不在场时，别人对你的评价。",
+    "source": "《发明与漫步》访谈",
+    "author": "杰夫·贝索斯",
+    "theme": "biographies",
+    "tags": ["品牌", "诚信", "口碑"]
+  },
+  {
+    "id": 6,
+    "text": "We are what we choose. 我们就是我们所做选择的总和。",
+    "source": "2010年普林斯顿大学毕业演讲",
+    "author": "杰夫·贝索斯",
+    "theme": "biographies",
+    "tags": ["选择", "人生", "责任"]
+  },
+  {
+    "id": 7,
+    "text": "今天很残酷，明天更残酷，后天很美好，但绝大多数人死在明天晚上。",
+    "source": "《马云：未来已来》",
+    "author": "马云",
+    "theme": "biographies",
+    "tags": ["坚持", "创业", "信念"]
+  },
+  {
+    "id": 8,
+    "text": "If you don't give up, you still have a chance. Giving up is the greatest failure. 如果你不放弃，就还有机会。放弃才是最大的失败。",
+    "source": "阿里巴巴IPO路演演讲",
+    "author": "马云",
+    "theme": "biographies",
+    "tags": ["坚持", "创业", "拼搏"]
+  },
+  {
+    "id": 9,
+    "text": "华为没有成功，只是在成长。",
+    "source": "《华为的冬天》",
+    "author": "任正非",
+    "theme": "biographies",
+    "tags": ["谦逊", "危机感", "成长"]
+  },
+  {
+    "id": 10,
+    "text": "一个人再有能力，也干不过一群人；一群人再有能力，也干不过一个制度。",
+    "source": "任正非内部讲话",
+    "author": "任正非",
+    "theme": "biographies",
+    "tags": ["管理", "制度", "团队"]
+  },
+  {
+    "id": 11,
+    "text": "做对的事情，比把事情做对更重要。",
+    "source": "腾讯内部管理分享",
+    "author": "马化腾",
+    "theme": "biographies",
+    "tags": ["战略", "决策", "方向"]
+  },
+  {
+    "id": 12,
+    "text": "有时候不是因为我们看到了机会才去坚持，而是因为坚持了才看到机会。",
+    "source": "马化腾内部讲话",
+    "author": "马化腾",
+    "theme": "biographies",
+    "tags": ["坚持", "机遇", "信念"]
+  },
+  {
+    "id": 13,
+    "text": "方法论是通用的，但每个公司的情况是独特的，不能照搬。",
+    "source": "字节跳动9周年演讲",
+    "author": "张一鸣",
+    "theme": "biographies",
+    "tags": ["方法论", "管理", "务实"]
+  },
+  {
+    "id": 14,
+    "text": "Develop a company as a product. 像打造产品一样打造公司。",
+    "source": "字节跳动内部沟通",
+    "author": "张一鸣",
+    "theme": "biographies",
+    "tags": ["管理", "产品思维", "组织"]
+  },
+  {
+    "id": 15,
+    "text": "风口上的猪都能飞，但风停的时候，最先掉下来的也是猪。",
+    "source": "雷军公开演讲",
+    "author": "雷军",
+    "theme": "biographies",
+    "tags": ["风口", "创业", "务实"]
+  },
+  {
+    "id": 16,
+    "text": "任何成功都不是偶然的，它来自于比他人更执着的追求。",
+    "source": "小米公司内部讲话",
+    "author": "雷军",
+    "theme": "biographies",
+    "tags": ["执着", "成功", "努力"]
+  },
+  {
+    "id": 17,
+    "text": "既往不恋，纵情向前。",
+    "source": "美团上市内部信",
+    "author": "王兴",
+    "theme": "biographies",
+    "tags": ["进取", "放下", "前行"]
+  },
+  {
+    "id": 18,
+    "text": "对未来越有信心，对当下越有耐心。",
+    "source": "美团内部交流",
+    "author": "王兴",
+    "theme": "biographies",
+    "tags": ["远见", "耐心", "信念"]
+  },
+  {
+    "id": 19,
+    "text": "Our cost plus is actually the price that we think customers would accept, but that is everyone's cost plus. If you think about it that way, it's a very different strategy. 我们的成本加价实际上是消费者愿意接受的价格，如果你这样思考，这是一个非常不同的策略。",
+    "source": "《财经》专访拼多多黄峥",
+    "author": "黄峥",
+    "theme": "biographies",
+    "tags": ["用户", "策略", "创新"]
+  },
+  {
+    "id": 20,
+    "text": "The first rule of compounding: never interrupt it unnecessarily. 复利的第一条规则：除非万不得已，否则永远不要打断它。",
+    "source": "《穷查理宝典》",
+    "author": "查理·芒格",
+    "theme": "biographies",
+    "tags": ["投资", "复利", "智慧"]
+  },
+  {
+    "id": 21,
+    "text": "Invert, always invert. 反过来想，总是反过来想。",
+    "source": "《穷查理宝典》",
+    "author": "查理·芒格",
+    "theme": "biographies",
+    "tags": ["逆向思维", "智慧", "决策"]
+  },
+  {
+    "id": 22,
+    "text": "Rule No.1: Never lose money. Rule No.2: Never forget rule No.1. 第一条规则：永远不要亏钱。第二条规则：永远不要忘记第一条。",
+    "source": "巴菲特历年股东信",
+    "author": "沃伦·巴菲特",
+    "theme": "biographies",
+    "tags": ["投资", "风控", "原则"]
+  },
+  {
+    "id": 23,
+    "text": "Be fearful when others are greedy and greedy when others are fearful. 在别人贪婪时恐惧，在别人恐惧时贪婪。",
+    "source": "巴菲特2008年《纽约时报》专栏",
+    "author": "沃伦·巴菲特",
+    "theme": "biographies",
+    "tags": ["逆势", "投资", "智慧"]
+  },
+  {
+    "id": 24,
+    "text": "人生·工作的结果 = 思维方式 × 热情 × 能力。",
+    "source": "《活法》",
+    "author": "稻盛和夫",
+    "theme": "biographies",
+    "tags": ["人生", "工作", "公式"]
+  },
+  {
+    "id": 25,
+    "text": "答案永远在现场。",
+    "source": "《干法》",
+    "author": "稻盛和夫",
+    "theme": "biographies",
+    "tags": ["务实", "现场", "管理"]
+  },
+  {
+    "id": 26,
+    "text": "企业应该像自来水一样，让所有人都能享受到优质的产品。",
+    "source": "松下幸之助演讲",
+    "author": "松下幸之助",
+    "theme": "biographies",
+    "tags": ["使命", "普惠", "经营"]
+  },
+  {
+    "id": 27,
+    "text": "下雨就要打伞，这是天经地义的事。企业经营也是如此，要顺应自然的规律。",
+    "source": "《松下幸之助经营哲学》",
+    "author": "松下幸之助",
+    "theme": "biographies",
+    "tags": ["经营", "顺势", "自然"]
+  },
+  {
+    "id": 28,
+    "text": "Your most unhappy customers are your greatest source of learning. 最不满意的客户是你最好的学习来源。",
+    "source": "《比尔·盖茨访谈录》",
+    "author": "比尔·盖茨",
+    "theme": "biographies",
+    "tags": ["客户", "学习", "成长"]
+  },
+  {
+    "id": 29,
+    "text": "We always overestimate the change that will occur in the next two years and underestimate the change that will occur in the next ten. 人们总是高估未来两年的变化，低估未来十年的变化。",
+    "source": "《未来之路》",
+    "author": "比尔·盖茨",
+    "theme": "biographies",
+    "tags": ["远见", "科技", "趋势"]
+  },
+  {
+    "id": 30,
+    "text": "If you never want to be criticized, for goodness' sake don't do anything new. 如果你永远不想被批评，那就什么新事都别做。",
+    "source": "《拉里·埃里森传》",
+    "author": "拉里·埃里森",
+    "theme": "biographies",
+    "tags": ["创新", "勇气", "批评"]
+  },
+  {
+    "id": 31,
+    "text": "The biggest risk is not taking any risk. 最大的风险就是不去冒任何风险。",
+    "source": "马克·扎克伯格公开演讲",
+    "author": "马克·扎克伯格",
+    "theme": "biographies",
+    "tags": ["冒险", "勇气", "创业"]
+  },
+  {
+    "id": 32,
+    "text": "You can't connect the dots looking forward; you can only connect them looking backwards. 你无法预先把点点滴滴串联起来，只有在回顾时才能将过往串联。",
+    "source": "2005年斯坦福大学毕业演讲",
+    "author": "史蒂夫·乔布斯",
+    "theme": "biographies",
+    "tags": ["人生", "经验", "信念"]
+  },
+  {
+    "id": 33,
+    "text": "人这一辈子，一定要做一件让自己骄傲的事情。",
+    "source": "柳传志内部讲话",
+    "author": "柳传志",
+    "theme": "biographies",
+    "tags": ["使命感", "创业", "成就"]
+  },
+  {
+    "id": 34,
+    "text": "宁做创业狼，不做打工狗。当然这话粗了些，但道理是对的。",
+    "source": "周鸿祎公开演讲",
+    "author": "周鸿祎",
+    "theme": "biographies",
+    "tags": ["创业", "拼搏", "志向"]
+  },
+  {
+    "id": 35,
+    "text": "人们往往高估自己一年能做的事，而低估自己十年能做的事。",
+    "source": "李彦宏内部演讲",
+    "author": "李彦宏",
+    "theme": "biographies",
+    "tags": ["远见", "耐心", "坚持"]
+  },
+  {
+    "id": 36,
+    "text": "The best way to predict the future is to create it. 预测未来最好的方式就是创造它。",
+    "source": "《彼得·德鲁克管理名言》（被广泛引用）",
+    "author": "彼得·德鲁克",
+    "theme": "biographies",
+    "tags": ["创造", "行动", "远见"]
+  },
+  {
+    "id": 37,
+    "text": "Margin is a sign of weakness. 利润率是软弱的标志。",
+    "source": "1997年贝索斯致股东信",
+    "author": "杰夫·贝索斯",
+    "theme": "biographies",
+    "tags": ["增长", "长远", "格局"]
+  },
+  {
+    "id": 38,
+    "text": "无论做什么，都要做到极致。工作就是最好的修行。",
+    "source": "《工匠精神》",
+    "author": "稻盛和夫",
+    "theme": "biographies",
+    "tags": ["极致", "工匠", "修行"]
+  },
+  {
+    "id": 39,
+    "text": "创新是区别领导者和追随者的唯一标准。",
+    "source": "乔布斯传记访谈",
+    "author": "史蒂夫·乔布斯",
+    "theme": "biographies",
+    "tags": ["创新", "领导力", "卓越"]
+  },
+  {
+    "id": 40,
+    "text": "All our dreams can come true if we have the courage to pursue them. 只要我们有勇气去追求，所有的梦想都能成真。",
+    "source": "沃尔特·迪士尼传记",
+    "author": "沃尔特·迪士尼",
+    "theme": "biographies",
+    "tags": ["梦想", "勇气", "追求"]
+  }
+]

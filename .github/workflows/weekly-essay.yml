@@ -1,0 +1,35 @@
+name: 📝 周末深度文章生成
+
+on:
+  schedule:
+    # 北京时间每周六早上 8:00 触发（UTC 0:00）
+    - cron: '0 0 * * 6'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 检出仓库
+        uses: actions/checkout@v4
+
+      - name: 设置 Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: 生成深度文章
+        run: node scripts/generate-weekly.js
+
+      - name: 提交并推送
+        run: |
+          git config user.name "daily-quotes-bot"
+          git config user.email "bot@daily-quotes.local"
+          git add output/
+          git diff --staged --quiet || git commit -m "📝 周末深度 $(date +'%Y-%m-%d')"
+          git push

@@ -1,0 +1,322 @@
+[
+  {
+    "id": 1,
+    "text": "当你真心渴望某样东西时，整个宇宙都会来帮忙。",
+    "source": "《牧羊少年奇幻之旅》",
+    "author": "保罗·柯艾略",
+    "theme": "dreams-perseverance",
+    "tags": ["梦想", "信念", "坚持"]
+  },
+  {
+    "id": 2,
+    "text": "没有一颗心，会因为追求梦想而受伤。当你真心渴望某样东西时，整个宇宙都会来帮忙。",
+    "source": "《牧羊少年奇幻之旅》",
+    "author": "保罗·柯艾略",
+    "theme": "dreams-perseverance",
+    "tags": ["梦想", "勇气", "信念"]
+  },
+  {
+    "id": 3,
+    "text": "人生最重要的不是你站在哪里，而是你朝着什么方向走。",
+    "source": "《活法》",
+    "author": "稻盛和夫",
+    "theme": "dreams-perseverance",
+    "tags": ["梦想", "方向", "人生"]
+  },
+  {
+    "id": 4,
+    "text": "付出不亚于任何人的努力，神灵都会相助。",
+    "source": "《干法》",
+    "author": "稻盛和夫",
+    "theme": "dreams-perseverance",
+    "tags": ["努力", "坚持", "信念"]
+  },
+  {
+    "id": 5,
+    "text": "人可以被毁灭，但不可以被打败。",
+    "source": "《老人与海》",
+    "author": "海明威",
+    "theme": "dreams-perseverance",
+    "tags": ["坚韧", "不屈", "毅力"]
+  },
+  {
+    "id": 6,
+    "text": "每一天都是一个新的日子。走运当然是好的，不过我情愿做到分毫不差。这样，运气来的时候，你就有所准备了。",
+    "source": "《老人与海》",
+    "author": "海明威",
+    "theme": "dreams-perseverance",
+    "tags": ["坚持", "准备", "自律"]
+  },
+  {
+    "id": 7,
+    "text": "一个人并不是生来要给打败的，你尽可以把他消灭掉，可就是打不败他。",
+    "source": "《老人与海》",
+    "author": "海明威",
+    "theme": "dreams-perseverance",
+    "tags": ["坚韧", "不屈", "精神"]
+  },
+  {
+    "id": 8,
+    "text": "我命由我不由天。",
+    "source": "《哪吒之魔童降世》",
+    "author": "饺子",
+    "theme": "dreams-perseverance",
+    "tags": ["命运", "奋斗", "不屈"]
+  },
+  {
+    "id": 9,
+    "text": "做人如果没有梦想，那跟咸鱼有什么分别？",
+    "source": "《少林足球》",
+    "author": "周星驰",
+    "theme": "dreams-perseverance",
+    "tags": ["梦想", "人生", "追求"]
+  },
+  {
+    "id": 10,
+    "text": "你的时间有限，所以不要浪费时间为别人而活。不要被教条所限，不要活在别人的观念里。不要让别人的意见左右自己内心的声音。最重要的是，勇敢地去追随自己的心灵和直觉。",
+    "source": "《斯坦福大学毕业演讲》",
+    "author": "史蒂夫·乔布斯",
+    "theme": "dreams-perseverance",
+    "tags": ["梦想", "勇气", "独立"]
+  },
+  {
+    "id": 11,
+    "text": "Stay Hungry, Stay Foolish. 求知若饥，虚心若愚。",
+    "source": "《斯坦福大学毕业演讲》",
+    "author": "史蒂夫·乔布斯",
+    "theme": "dreams-perseverance",
+    "tags": ["求知", "谦逊", "进取"]
+  },
+  {
+    "id": 12,
+    "text": "做事的人，不是去争论，而是去行动。把每一件简单的事做好就是不简单，把每一件平凡的事做好就是不平凡。",
+    "source": "《活法》",
+    "author": "稻盛和夫",
+    "theme": "dreams-perseverance",
+    "tags": ["行动", "坚持", "平凡"]
+  },
+  {
+    "id": 13,
+    "text": "希望是美好的，也许是世间最美好的事物，而美好的事物永不消逝。",
+    "source": "《肖申克的救赎》",
+    "author": "斯蒂芬·金",
+    "theme": "dreams-perseverance",
+    "tags": ["希望", "信念", "美好"]
+  },
+  {
+    "id": 14,
+    "text": "恐惧让你沦为囚犯，希望让你重获自由。",
+    "source": "《肖申克的救赎》",
+    "author": "斯蒂芬·金",
+    "theme": "dreams-perseverance",
+    "tags": ["希望", "勇气", "自由"]
+  },
+  {
+    "id": 15,
+    "text": "I have a dream that one day this nation will rise up and live out the true meaning of its creed. 我有一个梦想，有一天这个国家会站立起来，真正实现其信条的真谛。",
+    "source": "《我有一个梦想》",
+    "author": "马丁·路德·金",
+    "theme": "dreams-perseverance",
+    "tags": ["梦想", "平等", "信念"]
+  },
+  {
+    "id": 16,
+    "text": "只要有了梦想，你就拥有了无限的可能。",
+    "source": "《思考致富》",
+    "author": "拿破仑·希尔",
+    "theme": "dreams-perseverance",
+    "tags": ["梦想", "可能", "信念"]
+  },
+  {
+    "id": 17,
+    "text": "凡是人心所能想象并且相信的，终能实现。",
+    "source": "《思考致富》",
+    "author": "拿破仑·希尔",
+    "theme": "dreams-perseverance",
+    "tags": ["信念", "想象", "成功"]
+  },
+  {
+    "id": 18,
+    "text": "以终为始——任何事情都是两次创造而成。我们做任何事都是先在头脑中构思，然后付诸实践。",
+    "source": "《高效能人士的七个习惯》",
+    "author": "史蒂芬·柯维",
+    "theme": "dreams-perseverance",
+    "tags": ["目标", "规划", "行动"]
+  },
+  {
+    "id": 19,
+    "text": "积极主动不仅指行事的态度，还意味着人一定要对自己的人生负责。个人行为取决于自身的抉择，而不是外在的环境。",
+    "source": "《高效能人士的七个习惯》",
+    "author": "史蒂芬·柯维",
+    "theme": "dreams-perseverance",
+    "tags": ["主动", "责任", "选择"]
+  },
+  {
+    "id": 20,
+    "text": "曼巴精神是一种心态，不是一种结果。它是一种生活方式，是每天早晨醒来时就有的决心。",
+    "source": "《曼巴精神》",
+    "author": "科比·布莱恩特",
+    "theme": "dreams-perseverance",
+    "tags": ["坚持", "决心", "行动"]
+  },
+  {
+    "id": 21,
+    "text": "那些你早起努力的日子，那些你熬夜刻苦的时光，那些你觉得太累了不想再努力但仍然咬牙坚持的岁月——这就是梦想的意义。",
+    "source": "《曼巴精神》",
+    "author": "科比·布莱恩特",
+    "theme": "dreams-perseverance",
+    "tags": ["努力", "坚持", "梦想"]
+  },
+  {
+    "id": 22,
+    "text": "生命就是这样一个过程，一个不断超越自身局限的过程，这就是命运，任何人都一样，在这过程中我们遭遇痛苦、超越局限，从而感受幸福。",
+    "source": "《病隙碎笔》",
+    "author": "史铁生",
+    "theme": "dreams-perseverance",
+    "tags": ["超越", "生命", "幸福"]
+  },
+  {
+    "id": 23,
+    "text": "微笑着，去唱生活的歌谣。不要抱怨生活给予了太多的磨难，不必抱怨生命中有太多的曲折。",
+    "source": "《病隙碎笔》",
+    "author": "史铁生",
+    "theme": "dreams-perseverance",
+    "tags": ["乐观", "坚韧", "生活"]
+  },
+  {
+    "id": 24,
+    "text": "人生最大的荣耀不在于从不跌倒，而在于每次跌倒后都能爬起来。",
+    "source": "《漫漫自由路》",
+    "author": "纳尔逊·曼德拉",
+    "theme": "dreams-perseverance",
+    "tags": ["坚韧", "勇气", "不屈"]
+  },
+  {
+    "id": 25,
+    "text": "在事情未成功之前，一切总看似不可能。",
+    "source": "《漫漫自由路》",
+    "author": "纳尔逊·曼德拉",
+    "theme": "dreams-perseverance",
+    "tags": ["坚持", "信念", "勇气"]
+  },
+  {
+    "id": 26,
+    "text": "世上本没有路，走的人多了，也便成了路。",
+    "source": "《热风》",
+    "author": "鲁迅",
+    "theme": "dreams-perseverance",
+    "tags": ["开拓", "行动", "勇气"]
+  },
+  {
+    "id": 27,
+    "text": "愿中国青年都摆脱冷气，只是向上走，不必听自暴自弃者流的话。能做事的做事，能发声的发声。有一分热，发一分光。",
+    "source": "《热风》",
+    "author": "鲁迅",
+    "theme": "dreams-perseverance",
+    "tags": ["青年", "担当", "热血"]
+  },
+  {
+    "id": 28,
+    "text": "即使慢，驰而不息，纵会落后，纵会失败，但一定可以达到他所向的目标。",
+    "source": "《华盖集》",
+    "author": "鲁迅",
+    "theme": "dreams-perseverance",
+    "tags": ["坚持", "毅力", "目标"]
+  },
+  {
+    "id": 29,
+    "text": "真正的勇气不是没有恐惧，而是面对恐惧依然前行。",
+    "source": "《绿野仙踪》",
+    "author": "L·弗兰克·鲍姆",
+    "theme": "dreams-perseverance",
+    "tags": ["勇气", "坚持", "无畏"]
+  },
+  {
+    "id": 30,
+    "text": "不要问你的梦想能实现什么，要问你能为你的梦想付出什么。",
+    "source": "《活出生命的意义》",
+    "author": "维克多·弗兰克尔",
+    "theme": "dreams-perseverance",
+    "tags": ["梦想", "付出", "意义"]
+  },
+  {
+    "id": 31,
+    "text": "在刺激与反应之间，存在一个空间。在这个空间中，是我们的自由和力量去选择我们的回应。我们的成长和幸福全在于此。",
+    "source": "《高效能人士的七个习惯》",
+    "author": "史蒂芬·柯维",
+    "theme": "dreams-perseverance",
+    "tags": ["选择", "自由", "成长"]
+  },
+  {
+    "id": 32,
+    "text": "千里之行，始于足下。",
+    "source": "《道德经》",
+    "author": "老子",
+    "theme": "dreams-perseverance",
+    "tags": ["行动", "积累", "坚持"]
+  },
+  {
+    "id": 33,
+    "text": "天将降大任于斯人也，必先苦其心志，劳其筋骨，饿其体肤，空乏其身，行拂乱其所为，所以动心忍性，曾益其所不能。",
+    "source": "《孟子·告子下》",
+    "author": "孟子",
+    "theme": "dreams-perseverance",
+    "tags": ["磨砺", "坚持", "担当"]
+  },
+  {
+    "id": 34,
+    "text": "不积跬步，无以至千里；不积小流，无以成江海。",
+    "source": "《荀子·劝学》",
+    "author": "荀子",
+    "theme": "dreams-perseverance",
+    "tags": ["积累", "坚持", "行动"]
+  },
+  {
+    "id": 35,
+    "text": "锲而舍之，朽木不折；锲而不舍，金石可镂。",
+    "source": "《荀子·劝学》",
+    "author": "荀子",
+    "theme": "dreams-perseverance",
+    "tags": ["坚持", "毅力", "恒心"]
+  },
+  {
+    "id": 36,
+    "text": "世界上最快乐的事，莫过于为理想而奋斗。",
+    "source": "《理想国》",
+    "author": "苏格拉底",
+    "theme": "dreams-perseverance",
+    "tags": ["理想", "奋斗", "快乐"]
+  },
+  {
+    "id": 37,
+    "text": "人生的价值，并不是用时间，而是用深度去衡量的。",
+    "source": "《战争与和平》",
+    "author": "列夫·托尔斯泰",
+    "theme": "dreams-perseverance",
+    "tags": ["价值", "深度", "人生"]
+  },
+  {
+    "id": 38,
+    "text": "纵有千古，横有八荒。前途似海，来日方长。",
+    "source": "《少年中国说》",
+    "author": "梁启超",
+    "theme": "dreams-perseverance",
+    "tags": ["希望", "抱负", "未来"]
+  },
+  {
+    "id": 39,
+    "text": "古之立大事者，不惟有超世之才，亦必有坚忍不拔之志。",
+    "source": "《晁错论》",
+    "author": "苏轼",
+    "theme": "dreams-perseverance",
+    "tags": ["坚韧", "志向", "毅力"]
+  },
+  {
+    "id": 40,
+    "text": "梦想无论怎样模糊，总潜伏在我们心底，使我们的心境永远得不到宁静，直到这些梦想成为事实。",
+    "source": "《驰笔》",
+    "author": "林语堂",
+    "theme": "dreams-perseverance",
+    "tags": ["梦想", "执着", "追求"]
+  }
+]

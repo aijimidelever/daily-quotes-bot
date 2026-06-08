@@ -1,0 +1,13 @@
+{
+  "name": "daily-quotes-bot",
+  "version": "1.0.0",
+  "description": "📖 每日一摘 - 文学语录每日推送系统",
+  "main": "scripts/generate-daily.js",
+  "scripts": {
+    "generate-daily": "node scripts/generate-daily.js",
+    "generate-weekly": "node scripts/generate-weekly.js",
+    "preview": "npx serve output"
+  },
+  "keywords": ["quotes", "literature", "wechat", "daily"],
+  "license": "MIT"
+}
