@@ -137,13 +137,58 @@ function generate() {
   }
 
   const dateStr = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
-  const outputPath = path.join(OUTPUT_DIR, `${dateStr}.html`);
+  const outputHtmlPath = path.join(OUTPUT_DIR, `${dateStr}.html`);
 
-  fs.writeFileSync(outputPath, template, 'utf-8');
+  fs.writeFileSync(outputHtmlPath, template, 'utf-8');
   
   // 同时输出为 latest.html（方便预览）
-  const latestPath = path.join(OUTPUT_DIR, 'latest.html');
-  fs.writeFileSync(latestPath, template, 'utf-8');
+  const latestHtmlPath = path.join(OUTPUT_DIR, 'latest.html');
+  fs.writeFileSync(latestHtmlPath, template, 'utf-8');
+
+  // ----- 生成 Markdown 版本 -----
+  const mdLines = [];
+  const mdDate = formatDate(now);
+  const weekNames = ['日', '一', '二', '三', '四', '五', '六'];
+  const shortDate = `${now.getFullYear()}年${String(now.getMonth() + 1).padStart(2, '0')}月${String(now.getDate()).padStart(2, '0')}日`;
+
+  // 标题
+  mdLines.push(`# ${theme.emoji} 每日一摘 · ${theme.name}`);
+  mdLines.push('');
+  mdLines.push(`> ${shortDate} | 主题：${theme.name}`);
+  mdLines.push('');
+  mdLines.push(`*${epigraph}*`);
+  mdLines.push('');
+  mdLines.push('---');
+  mdLines.push('');
+
+  // 语录
+  selected.forEach((q, i) => {
+    mdLines.push(`### ${i + 1}.`);
+    mdLines.push('');
+    mdLines.push(`> ${q.text}`);
+    mdLines.push('');
+    mdLines.push(`—— **${q.author}**《${q.source.replace(/[《》]/g, '')}》`);
+    const tagsStr = q.tags && q.tags.length > 0 ? ` \`${q.tags.join('` `')}\`` : '';
+    if (tagsStr) mdLines.push(tagsStr);
+    mdLines.push('');
+  });
+
+  mdLines.push('---');
+  mdLines.push('');
+  mdLines.push(`**📝 今日小结**`);
+  mdLines.push('');
+  mdLines.push(summary);
+  mdLines.push('');
+  mdLines.push(`---`);
+  mdLines.push(`*— 每日一摘 · 用文字温暖你 —*`);
+
+  const mdContent = mdLines.join('\n');
+  
+  const outputMdPath = path.join(OUTPUT_DIR, `${dateStr}.md`);
+  fs.writeFileSync(outputMdPath, mdContent, 'utf-8');
+  
+  const latestMdPath = path.join(OUTPUT_DIR, 'latest.md');
+  fs.writeFileSync(latestMdPath, mdContent, 'utf-8');
 
   // 统计字数
   const textOnly = template.replace(/<[^>]*>/g, '').replace(/\s+/g, '');
@@ -154,7 +199,9 @@ function generate() {
   console.log(`   日期：${dateStr}`);
   console.log(`   语录：${selected.length} 条`);
   console.log(`   字数：约 ${charCount} 字`);
-  console.log(`   输出：${outputPath}`);
+  console.log(`   输出：`);
+  console.log(`   📄 HTML: ${outputHtmlPath}`);
+  console.log(`   📝 MD:   ${outputMdPath}`);
 }
 
 generate();

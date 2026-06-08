@@ -253,12 +253,51 @@ function generate() {
     fs.mkdirSync(OUTPUT_DIR, { recursive: true });
   }
 
-  const outputPath = path.join(OUTPUT_DIR, `${dateStr}-weekly.html`);
-  fs.writeFileSync(outputPath, template, 'utf-8');
+  const outputHtmlPath = path.join(OUTPUT_DIR, `${dateStr}-weekly.html`);
+  fs.writeFileSync(outputHtmlPath, template, 'utf-8');
 
-  // 同时更新 latest.html
-  const latestPath = path.join(OUTPUT_DIR, 'latest.html');
-  fs.writeFileSync(latestPath, template, 'utf-8');
+  // 同时更新 latest.html（周末展示深度文章）
+  const latestHtmlPath = path.join(OUTPUT_DIR, 'latest.html');
+  fs.writeFileSync(latestHtmlPath, template, 'utf-8');
+
+  // ----- 生成 Markdown 版本 -----
+  const mdLines = [];
+  mdLines.push(`# ${theme.emoji} ${title}`);
+  mdLines.push('');
+  mdLines.push(`> ${formatDate(now)} | 主题：${theme.name}`);
+  mdLines.push('');
+  mdLines.push('---');
+  mdLines.push('');
+
+  // 从 html 内容提取纯文本段落
+  const textContent = articleContent
+    .replace(/<h2>/g, '\n\n## ')
+    .replace(/<\/h2>/g, '')
+    .replace(/<blockquote>/g, '\n> ')
+    .replace(/<\/blockquote>/g, '')
+    .replace(/<span class="source">/g, '\n>\n> —— ')
+    .replace(/<\/span>/g, '')
+    .replace(/<p>/g, '\n')
+    .replace(/<\/p>/g, '')
+    .replace(/<br\s*\/?>/g, '\n')
+    .replace(/&nbsp;/g, ' ')
+    .replace(/&amp;/g, '&')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .trim();
+
+  mdLines.push(textContent);
+  mdLines.push('');
+  mdLines.push('---');
+  mdLines.push(`*— 每日一摘 · 周末深度 —*`);
+
+  const mdContent = mdLines.join('\n');
+
+  const outputMdPath = path.join(OUTPUT_DIR, `${dateStr}-weekly.md`);
+  fs.writeFileSync(outputMdPath, mdContent, 'utf-8');
+
+  const latestMdPath = path.join(OUTPUT_DIR, 'latest.md');
+  fs.writeFileSync(latestMdPath, mdContent, 'utf-8');
 
   // 统计字数
   const textOnly = template.replace(/<[^>]*>/g, '').replace(/\s+/g, '');
@@ -269,7 +308,9 @@ function generate() {
   console.log(`   标题：${title}`);
   console.log(`   日期：${dateStr}`);
   console.log(`   字数：约 ${charCount} 字`);
-  console.log(`   输出：${outputPath}`);
+  console.log(`   输出：`);
+  console.log(`   📄 HTML: ${outputHtmlPath}`);
+  console.log(`   📝 MD:   ${outputMdPath}`);
 }
 
 function loadQuotes(themeKey) {
