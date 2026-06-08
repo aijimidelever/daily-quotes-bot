@@ -33,3 +33,10 @@ jobs:
           git add output/
           git diff --staged --quiet || git commit -m "📝 每日摘录 $(date +'%Y-%m-%d')"
           git push
+
+      - name: 推送到公众号草稿箱
+        if: success()
+        env:
+          WX_APPID: ${{ secrets.WX_APPID }}
+          WX_APPSECRET: ${{ secrets.WX_APPSECRET }}
+        run: node scripts/wechat-draft.js
