@@ -22,7 +22,35 @@
     padding: 40px 30px;
     box-shadow: 0 2px 12px rgba(0,0,0,0.05);
   }
-  .copy-bar {
+  /* 操作按钮区 */
+  .action-bar {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+  .action-btn {
+    padding: 8px 20px;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.2s;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+  }
+  .action-btn:hover { opacity: 0.9; }
+  .action-btn:active { opacity: 0.8; }
+  .action-btn.green { background: #4caf50; }
+  .action-btn.green:hover { background: #3d8b40; }
+  .action-btn.orange { background: #ff9800; }
+  .action-btn.orange:hover { background: #f57c00; }
+  .action-btn.purple { background: #9c27b0; }
+  .action-btn.purple:hover { background: #7b1fa2; }
+  /* 信息栏 */
+  .info-bar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -30,23 +58,11 @@
     padding-bottom: 16px;
     border-bottom: 1px solid #eee;
   }
-  .copy-bar .label {
+  .info-bar .label {
     font-size: 13px;
     color: #999;
     letter-spacing: 1px;
   }
-  .copy-btn {
-    padding: 8px 20px;
-    background: #4caf50;
-    color: #fff;
-    border: none;
-    border-radius: 6px;
-    font-size: 14px;
-    cursor: pointer;
-    transition: background 0.2s;
-  }
-  .copy-btn:hover { background: #3d8b40; }
-  .copy-btn:active { background: #2e7d32; }
   .md-content h1 {
     font-size: 22px;
     text-align: center;
@@ -111,32 +127,47 @@
     max-height: 500px;
     overflow-y: auto;
   }
-  .raw-copy-btn {
-    margin-top: 12px;
-    padding: 8px 20px;
-    background: #2196f3;
-    color: #fff;
-    border: none;
-    border-radius: 6px;
-    font-size: 14px;
-    cursor: pointer;
-  }
-  .raw-copy-btn:hover { background: #1976d2; }
   .footer {
     margin-top: 32px;
     text-align: center;
     font-size: 12px;
     color: #bbb;
   }
+  /* 提示气泡 */
+  .toast {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #333;
+    color: #fff;
+    padding: 10px 24px;
+    border-radius: 8px;
+    font-size: 14px;
+    z-index: 9999;
+    display: none;
+    animation: fadeIn 0.3s ease;
+  }
+  @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
 
 </style>
 </head>
 <body>
+
+<div class="toast" id="toast"></div>
+
 <div class="container">
 
-  <div class="copy-bar">
-    <div class="label">📝 Markdown 版（复制用）| 2026年06月11日</div>
-    <button class="copy-btn" onclick="copyRaw()">复制 Markdown 原文</button>
+  <!-- 操作按钮区 -->
+  <div class="action-bar">
+    <button class="action-btn green" onclick="copyRaw()">📋 复制 Markdown</button>
+    <a class="action-btn orange" href="https://github.com/aijimidelever/daily-quotes-bot/actions/workflows/daily-quote.yml" target="_blank">🔄 换一批</a>
+    <a class="action-btn purple" href="https://github.com/aijimidelever/daily-quotes-bot/actions/workflows/daily-quote.yml" target="_blank">✨ 生成今日</a>
+  </div>
+
+  <!-- 日期信息 -->
+  <div class="info-bar">
+    <div class="label">📝 2026年06月11日</div>
   </div>
 
   <div class="md-content">
@@ -208,7 +239,7 @@
   </div>
 
   <div class="raw-section">
-    <div class="label">📋 Markdown 原文（点击按钮一键复制）</div>
+    <div class="label">📋 Markdown 原文（上方按钮一键复制）</div>
     <div class="raw-box" id="rawMd"># ⭐ 每日一摘 · 梦想与坚持
 
 &gt; 2026年06月11日 | 主题：梦想与坚持
@@ -288,7 +319,6 @@
 
 ---
 *— 每日一摘 · 用文字温暖你 —*</div>
-    <button class="raw-copy-btn" onclick="copyRaw2()">复制原文到编辑器</button>
   </div>
 
   <div class="footer">— 每日一摘 · 用文字温暖你 —</div>
@@ -299,18 +329,23 @@
 function copyRaw() {
   const raw = document.getElementById('rawMd').textContent;
   navigator.clipboard.writeText(raw).then(() => {
-    const btn = document.querySelector('.copy-btn');
-    btn.textContent = '✅ 已复制！';
-    setTimeout(() => btn.textContent = '复制 Markdown 原文', 2000);
+    showToast('✅ 已复制到剪贴板！');
+  }).catch(() => {
+    // fallback for older browsers
+    const textarea = document.createElement('textarea');
+    textarea.value = raw;
+    document.body.appendChild(textarea);
+    textarea.select();
+    document.execCommand('copy');
+    document.body.removeChild(textarea);
+    showToast('✅ 已复制到剪贴板！');
   });
 }
-function copyRaw2() {
-  const raw = document.getElementById('rawMd').textContent;
-  navigator.clipboard.writeText(raw).then(() => {
-    const btn = document.querySelector('.raw-copy-btn');
-    btn.textContent = '✅ 已复制！';
-    setTimeout(() => btn.textContent = '复制原文到编辑器', 2000);
-  });
+function showToast(msg) {
+  const toast = document.getElementById('toast');
+  toast.textContent = msg;
+  toast.style.display = 'block';
+  setTimeout(() => toast.style.display = 'none', 2500);
 }
 
 </script>
