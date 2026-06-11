@@ -101,7 +101,7 @@ function generate() {
 
   // 加载语录
   const allQuotes = loadQuotes(theme.key);
-  const selected = pickRandom(allQuotes, 5);
+  const selected = pickRandom(allQuotes, 5 + Math.floor(Math.random() * 6));
   const epigraph = pickRandom(EPIGRAPHS, 1)[0];
   const summary = generateSummary(selected, theme);
 
@@ -190,6 +190,14 @@ function generate() {
   const latestMdPath = path.join(OUTPUT_DIR, 'latest.md');
   fs.writeFileSync(latestMdPath, mdContent, 'utf-8');
 
+  // 渲染 Markdown 为可复制的 HTML 页面（调用 Python 脚本）
+  try {
+    const { execSync } = require('child_process');
+    execSync('python3 ' + path.join(__dirname, 'render-md-html.py'), { stdio: 'inherit' });
+  } catch (e) {
+    console.log('⚠️ Markdown 渲染页面生成失败（不影响 MD 文件）');
+  }
+
   // 统计字数
   const textOnly = template.replace(/<[^>]*>/g, '').replace(/\s+/g, '');
   const charCount = textOnly.length;
@@ -200,8 +208,8 @@ function generate() {
   console.log(`   语录：${selected.length} 条`);
   console.log(`   字数：约 ${charCount} 字`);
   console.log(`   输出：`);
-  console.log(`   📄 HTML: ${outputHtmlPath}`);
-  console.log(`   📝 MD:   ${outputMdPath}`);
+  console.log(`   📝 MD:       ${outputMdPath}`);
+  console.log(`   📋 复制页面: ${path.join(OUTPUT_DIR, dateStr + '-copy.html')}`);
 }
 
 generate();
