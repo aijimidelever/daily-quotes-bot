@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>💕 有些路，只能一个人走</title>
+<title>💕 每日一摘 · 爱与孤独</title>
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body {
@@ -22,25 +22,20 @@
     box-shadow: 0 2px 12px rgba(0,0,0,0.04);
   }
 
+  /* 头部 - 日期与主题 */
   .header {
     text-align: center;
     padding-bottom: 24px;
     margin-bottom: 30px;
     border-bottom: 1px solid #eee;
   }
-  .date { font-size: 13px; color: #999; letter-spacing: 2px; margin-bottom: 8px; }
-  .article-title {
-    font-size: 22px;
-    font-weight: 600;
-    line-height: 1.4;
-    color: #222;
-    margin-bottom: 6px;
-  }
-  .theme-tag {
+  .date { font-size: 13px; color: #999; letter-spacing: 2px; }
+  .theme-label {
     display: inline-block;
-    padding: 3px 14px;
+    margin-top: 10px;
+    padding: 4px 16px;
     border-radius: 20px;
-    font-size: 12px;
+    font-size: 13px;
     color: #fff;
   }
   .theme-courage-growth { background: #e74c3c; }
@@ -48,42 +43,70 @@
   .theme-life-wisdom { background: #4caf50; }
   .theme-dreams-perseverance { background: #ff9800; }
   .theme-biographies { background: #2196f3; }
+  .theme-default { background: #9c27b0; }
 
-  .content {
-    font-size: 16px;
+  /* 每日引言 */
+  .epigraph {
+    text-align: center;
+    font-size: 14px;
+    color: #888;
+    font-style: italic;
+    margin-bottom: 32px;
+    padding: 0 10px;
+  }
+  .epigraph::before { content: "「"; color: #ccc; }
+  .epigraph::after { content: "」"; color: #ccc; }
+
+  /* 语录卡片 */
+  .quote-card {
+    margin-bottom: 32px;
+    padding: 24px;
+    background: #f9f7f6;
+    border-radius: 10px;
+    border-left: 4px solid;
+    transition: background 0.2s;
+  }
+  .quote-card:hover { background: #f3f0ed; }
+  .theme-courage-growth-border { border-color: #e74c3c; }
+  .theme-love-loneliness-border { border-color: #e91e63; }
+  .theme-life-wisdom-border { border-color: #4caf50; }
+  .theme-dreams-perseverance-border { border-color: #ff9800; }
+  .theme-biographies-border { border-color: #2196f3; }
+
+  .quote-text {
+    font-size: 17px;
     line-height: 2;
     letter-spacing: 0.5px;
-    color: #444;
+    margin-bottom: 12px;
   }
-  .content p { margin-bottom: 20px; text-indent: 2em; }
-  .content h2 {
-    font-size: 19px;
-    margin: 32px 0 16px;
-    padding-left: 14px;
-    border-left: 4px solid;
-    font-weight: 600;
-    color: #333;
-    text-indent: 0;
-  }
-  .content blockquote {
-    margin: 20px 0;
-    padding: 16px 20px;
-    background: #f5f2f0;
-    border-radius: 8px;
-    border-left: 4px solid #d4a574;
-    font-style: italic;
-    color: #666;
-    text-indent: 0;
-  }
-  .content blockquote .source {
-    display: block;
-    text-align: right;
-    margin-top: 8px;
+  .quote-source {
     font-size: 13px;
-    color: #999;
-    font-style: normal;
+    color: #888;
+    text-align: right;
+  }
+  .quote-source .author {
+    color: #666;
+    font-weight: 500;
   }
 
+  /* 每日小结 */
+  .summary {
+    margin-top: 36px;
+    padding: 20px;
+    background: #f0f7ff;
+    border-radius: 10px;
+    font-size: 14px;
+    line-height: 1.9;
+    color: #555;
+  }
+  .summary-title {
+    font-size: 13px;
+    font-weight: 600;
+    color: #2196f3;
+    margin-bottom: 8px;
+  }
+
+  /* 页脚 */
   .footer {
     margin-top: 40px;
     padding-top: 20px;
@@ -94,56 +117,81 @@
     letter-spacing: 1px;
   }
 
+  /* 响应式 */
   @media (max-width: 480px) {
     .container { padding: 24px 16px; }
-    .article-title { font-size: 19px; }
-    .content { font-size: 15px; }
+    .quote-text { font-size: 16px; }
+    .quote-card { padding: 18px; }
   }
 </style>
 </head>
 <body>
 <div class="container">
+
+  <!-- 头部 -->
   <div class="header">
-    <div class="date">2026年10月10日 星期六</div>
-    <div class="article-title">💕 有些路，只能一个人走</div>
-    <span class="theme-tag theme-love-loneliness">爱与孤独</span>
+    <div class="date">2026年10月13日 星期二</div>
+    <span class="theme-label theme-love-loneliness">爱与孤独</span>
   </div>
-  <div class="content">
-    爱是人类的永恒主题，而孤独则是每个人终将面对的功课。当我们学会与孤独共处，才能真正理解爱的意义。
 
-<h2>💕 关于「爱与孤独」的另一种解读</h2>
+  <!-- 引言 -->
+  <div class="epigraph">阅读就是在别人的故事里，遇见自己的影子。</div>
 
-<blockquote>爱一个人，就是在他的头衔、地位、学历、经历、善行、劣迹之外，看出真正的他不过是个孩子——好孩子或坏孩子——所以疼了他。<span class="source">—— 海桑《你是我流浪过的一个地方》</span></blockquote>
-
-<p>孤独不是一种缺失，而是一种完整。海桑的文字让我们明白，只有当一个人学会享受独处的时光，才能真正有能力去爱别人。独处时，我们不是在等待什么，而是在成为什么。</p>
-
-<blockquote>生而为人，我很抱歉。<span class="source">—— 太宰治《人间失格》</span></blockquote>
-
-<p>爱的最深境界，或许是允许对方做自己。太宰治的话触及了爱的本质——爱不是占有，不是改变，而是在理解中成就彼此。这样的爱，既需要勇气，也需要智慧。</p>
-
-<h2>那些文字教会我们的事</h2>
-
-<blockquote>人的心只容得下一定程度的绝望，海绵已经吸够了水，即使大海从它上面流过，也不能再给它增添一滴水了。<span class="source">—— 维克多·雨果《巴黎圣母院》</span></blockquote>
-
-<p>人与人之间的相遇，都是一场美丽的意外。维克多·雨果笔下的情感世界提醒我们，珍惜当下的每一次相遇，因为有些人，一旦错过就不再。</p>
-
-<blockquote>我们曾如此渴望命运的波澜，到最后才发现，人生最曼妙的风景，竟是内心的淡定与从容。<span class="source">—— 杨绛《一百岁感言》</span></blockquote>
-
-<p>孤独不是一种缺失，而是一种完整。杨绛的文字让我们明白，只有当一个人学会享受独处的时光，才能真正有能力去爱别人。独处时，我们不是在等待什么，而是在成为什么。</p>
-
-<h2>💕 关于「爱与孤独」的另一种解读</h2>
-
-<blockquote>如果我不曾见到太阳，我本可以忍受黑暗。<span class="source">—— 艾米莉·狄金森《如果我不曾见过太阳》</span></blockquote>
-
-<p>爱的最深境界，或许是允许对方做自己。艾米莉·狄金森的话触及了爱的本质——爱不是占有，不是改变，而是在理解中成就彼此。这样的爱，既需要勇气，也需要智慧。</p>
-
-<blockquote>你若爱，生活哪里都可爱。你若恨，生活哪里都可恨。<span class="source">—— 丰子恺《豁然开朗》</span></blockquote>
-
-<p>人与人之间的相遇，都是一场美丽的意外。丰子恺笔下的情感世界提醒我们，珍惜当下的每一次相遇，因为有些人，一旦错过就不再。</p>
-
-<p>我们收集这些文字，不是为了怀旧，而是为了在喧嚣的世界中，保留一方可以静心思考的空间。💕 愿文字的温度，能陪你度过每一个需要力量的日子。</p>
+  <!-- 语录列表 -->
+  
+  <div class="quote-card theme-love-loneliness-border">
+    <div class="quote-text">如果我不曾见到太阳，我本可以忍受黑暗。</div>
+    <div class="quote-source">—— <span class="author">艾米莉·狄金森</span>《如果我不曾见过太阳》 · 孤独 · 希望 · 对比</div>
   </div>
-  <div class="footer">— 每日一摘 · 周末深度 —</div>
+
+  <div class="quote-card theme-love-loneliness-border">
+    <div class="quote-text">你若爱，生活哪里都可爱。你若恨，生活哪里都可恨。</div>
+    <div class="quote-source">—— <span class="author">丰子恺</span>《豁然开朗》 · 爱 · 生活 · 心态</div>
+  </div>
+
+  <div class="quote-card theme-love-loneliness-border">
+    <div class="quote-text">我们曾如此渴望命运的波澜，到最后才发现，人生最曼妙的风景，竟是内心的淡定与从容。</div>
+    <div class="quote-source">—— <span class="author">杨绛</span>《一百岁感言》 · 孤独 · 人生 · 淡定</div>
+  </div>
+
+  <div class="quote-card theme-love-loneliness-border">
+    <div class="quote-text">我以这一丛野草，在明与暗，生与死，过去与未来之际，献于友与仇，人与兽，爱者与不爱者之前作证。</div>
+    <div class="quote-source">—— <span class="author">鲁迅</span>《野草》 · 孤独 · 抗争 · 生命</div>
+  </div>
+
+  <div class="quote-card theme-love-loneliness-border">
+    <div class="quote-text">我总觉得，最深的爱，往往与孤独相伴而生。因为懂得，所以孤独；因为深爱，所以寂寞。</div>
+    <div class="quote-source">—— <span class="author">杨绛</span>《我们仨》 · 爱 · 孤独 · 懂得</div>
+  </div>
+
+  <div class="quote-card theme-love-loneliness-border">
+    <div class="quote-text">爱之于我，不是肌肤之亲，不是一蔬一饭，它是一种不死的欲望，是疲惫生活中的英雄梦想。</div>
+    <div class="quote-source">—— <span class="author">玛格丽特·杜拉斯</span>《情人》 · 爱情 · 理想 · 信念</div>
+  </div>
+
+  <div class="quote-card theme-love-loneliness-border">
+    <div class="quote-text">一个人至少拥有一个梦想，有一个理由去坚强。心若没有栖息的地方，到哪里都是在流浪。</div>
+    <div class="quote-source">—— <span class="author">三毛</span>《撒哈拉的故事》 · 孤独 · 梦想 · 归宿</div>
+  </div>
+
+  <div class="quote-card theme-love-loneliness-border">
+    <div class="quote-text">爱是恒久忍耐，又有恩慈；爱是不嫉妒，爱是不自夸，不张狂。</div>
+    <div class="quote-source">—— <span class="author">使徒保罗</span>《圣经·哥林多前书》 · 爱情 · 包容 · 信仰</div>
+  </div>
+
+  <div class="quote-card theme-love-loneliness-border">
+    <div class="quote-text">我在世间遇到的每一个人，都是一本我读不完的书。而我自己，也是一本没有人能读完的书。</div>
+    <div class="quote-source">—— <span class="author">余华</span>《活着》 · 孤独 · 人生 · 理解</div>
+  </div>
+
+  <!-- 每日小结 -->
+  <div class="summary">
+    <div class="summary-title">📝 今日小结</div>
+    <p>💕 今日与你分享 9 段关于「爱与孤独」的文字，来自 艾米莉·狄金森、丰子恺、杨绛、鲁迅、玛格丽特·杜拉斯、三毛、使徒保罗、余华 等作家。愿这些句子在你需要的时刻，给你一点力量、一点慰藉。</p>
+  </div>
+
+  <!-- 页脚 -->
+  <div class="footer">— 每日一摘 · 用文字温暖你 —</div>
 </div>
 </body>
 </html>
