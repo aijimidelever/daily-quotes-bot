@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>📜 每日一摘 · 人物传记</title>
+<title>🌿 放下执念，才能看见更远的风景</title>
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body {
@@ -22,20 +22,25 @@
     box-shadow: 0 2px 12px rgba(0,0,0,0.04);
   }
 
-  /* 头部 - 日期与主题 */
   .header {
     text-align: center;
     padding-bottom: 24px;
     margin-bottom: 30px;
     border-bottom: 1px solid #eee;
   }
-  .date { font-size: 13px; color: #999; letter-spacing: 2px; }
-  .theme-label {
+  .date { font-size: 13px; color: #999; letter-spacing: 2px; margin-bottom: 8px; }
+  .article-title {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #222;
+    margin-bottom: 6px;
+  }
+  .theme-tag {
     display: inline-block;
-    margin-top: 10px;
-    padding: 4px 16px;
+    padding: 3px 14px;
     border-radius: 20px;
-    font-size: 13px;
+    font-size: 12px;
     color: #fff;
   }
   .theme-courage-growth { background: #e74c3c; }
@@ -43,70 +48,42 @@
   .theme-life-wisdom { background: #4caf50; }
   .theme-dreams-perseverance { background: #ff9800; }
   .theme-biographies { background: #2196f3; }
-  .theme-default { background: #9c27b0; }
 
-  /* 每日引言 */
-  .epigraph {
-    text-align: center;
-    font-size: 14px;
-    color: #888;
-    font-style: italic;
-    margin-bottom: 32px;
-    padding: 0 10px;
-  }
-  .epigraph::before { content: "「"; color: #ccc; }
-  .epigraph::after { content: "」"; color: #ccc; }
-
-  /* 语录卡片 */
-  .quote-card {
-    margin-bottom: 32px;
-    padding: 24px;
-    background: #f9f7f6;
-    border-radius: 10px;
-    border-left: 4px solid;
-    transition: background 0.2s;
-  }
-  .quote-card:hover { background: #f3f0ed; }
-  .theme-courage-growth-border { border-color: #e74c3c; }
-  .theme-love-loneliness-border { border-color: #e91e63; }
-  .theme-life-wisdom-border { border-color: #4caf50; }
-  .theme-dreams-perseverance-border { border-color: #ff9800; }
-  .theme-biographies-border { border-color: #2196f3; }
-
-  .quote-text {
-    font-size: 17px;
+  .content {
+    font-size: 16px;
     line-height: 2;
     letter-spacing: 0.5px;
-    margin-bottom: 12px;
+    color: #444;
   }
-  .quote-source {
-    font-size: 13px;
-    color: #888;
-    text-align: right;
-  }
-  .quote-source .author {
-    color: #666;
-    font-weight: 500;
-  }
-
-  /* 每日小结 */
-  .summary {
-    margin-top: 36px;
-    padding: 20px;
-    background: #f0f7ff;
-    border-radius: 10px;
-    font-size: 14px;
-    line-height: 1.9;
-    color: #555;
-  }
-  .summary-title {
-    font-size: 13px;
+  .content p { margin-bottom: 20px; text-indent: 2em; }
+  .content h2 {
+    font-size: 19px;
+    margin: 32px 0 16px;
+    padding-left: 14px;
+    border-left: 4px solid;
     font-weight: 600;
-    color: #2196f3;
-    margin-bottom: 8px;
+    color: #333;
+    text-indent: 0;
+  }
+  .content blockquote {
+    margin: 20px 0;
+    padding: 16px 20px;
+    background: #f5f2f0;
+    border-radius: 8px;
+    border-left: 4px solid #d4a574;
+    font-style: italic;
+    color: #666;
+    text-indent: 0;
+  }
+  .content blockquote .source {
+    display: block;
+    text-align: right;
+    margin-top: 8px;
+    font-size: 13px;
+    color: #999;
+    font-style: normal;
   }
 
-  /* 页脚 */
   .footer {
     margin-top: 40px;
     padding-top: 20px;
@@ -117,86 +94,56 @@
     letter-spacing: 1px;
   }
 
-  /* 响应式 */
   @media (max-width: 480px) {
     .container { padding: 24px 16px; }
-    .quote-text { font-size: 16px; }
-    .quote-card { padding: 18px; }
+    .article-title { font-size: 19px; }
+    .content { font-size: 15px; }
   }
 </style>
 </head>
 <body>
 <div class="container">
-
-  <!-- 头部 -->
   <div class="header">
     <div class="date">2026年10月17日 星期六</div>
-    <span class="theme-label theme-biographies">人物传记</span>
+    <div class="article-title">🌿 放下执念，才能看见更远的风景</div>
+    <span class="theme-tag theme-life-wisdom">生活与智慧</span>
   </div>
+  <div class="content">
+    生活中处处蕴藏着智慧，只是我们常常走得太快，忘了停下来思考。那些穿越时空的箴言，依然在为今日的我们指引方向。
 
-  <!-- 引言 -->
-  <div class="epigraph">文字是时间的酿酒，越陈越香。</div>
+<h2>🌿 关于「生活与智慧」的另一种解读</h2>
 
-  <!-- 语录列表 -->
-  
-  <div class="quote-card theme-biographies-border">
-    <div class="quote-text">Your most unhappy customers are your greatest source of learning. 最不满意的客户是你最好的学习来源。</div>
-    <div class="quote-source">—— <span class="author">比尔·盖茨</span>《比尔·盖茨访谈录》 · 客户 · 学习 · 成长</div>
+<blockquote>独与天地精神往来。<span class="source">—— 庄子《庄子·天下》</span></blockquote>
+
+<p>生活的智慧，往往藏在最平凡的日子里。庄子这段话道出了人生的真谛——我们总是追逐远方的风景，却忽略了脚下的美好。真正的智慧，是能够在平凡中发现不平凡。</p>
+
+<blockquote>人生最好的境界是丰富的安静。<span class="source">—— 周国平《安静》</span></blockquote>
+
+<p>放下执念，不是放弃追求，而是换一种方式前行。周国平的人生哲学告诉我们，有时候停下来思考，比盲目向前更重要。生活的艺术，在于知道什么时候该进，什么时候该退。</p>
+
+<h2>那些文字教会我们的事</h2>
+
+<blockquote>一个人怎样看待自己，决定了此人的命运，指向了他的归宿。<span class="source">—— 爱默生《论自助》</span></blockquote>
+
+<p>简单，是最高级的复杂。爱默生的话看似朴素，却蕴含着深刻的处世哲学。在这个信息爆炸的时代，学会做减法，或许是我们最需要学习的功课。</p>
+
+<blockquote>享受悠闲的生活只要一种艺术家的性情，在一种全然悠闲的情绪中，去消遣一个闲暇无事的下午。<span class="source">—— 林语堂《生活的艺术》</span></blockquote>
+
+<p>生活的智慧，往往藏在最平凡的日子里。林语堂这段话道出了人生的真谛——我们总是追逐远方的风景，却忽略了脚下的美好。真正的智慧，是能够在平凡中发现不平凡。</p>
+
+<h2>🌿 关于「生活与智慧」的另一种解读</h2>
+
+<blockquote>人间不会有单纯的快乐，快乐总夹杂着烦恼和忧虑。<span class="source">—— 杨绛《我们仨》</span></blockquote>
+
+<p>放下执念，不是放弃追求，而是换一种方式前行。杨绛的人生哲学告诉我们，有时候停下来思考，比盲目向前更重要。生活的艺术，在于知道什么时候该进，什么时候该退。</p>
+
+<blockquote>幸福就是身体无痛苦，灵魂无烦恼。<span class="source">—— 罗素《幸福之路》</span></blockquote>
+
+<p>简单，是最高级的复杂。罗素的话看似朴素，却蕴含着深刻的处世哲学。在这个信息爆炸的时代，学会做减法，或许是我们最需要学习的功课。</p>
+
+<p>我们收集这些文字，不是为了怀旧，而是为了在喧嚣的世界中，保留一方可以静心思考的空间。🌿 愿文字的温度，能陪你度过每一个需要力量的日子。</p>
   </div>
-
-  <div class="quote-card theme-biographies-border">
-    <div class="quote-text">Our cost plus is actually the price that we think customers would accept, but that is everyone's cost plus. If you think about it that way, it's a very different strategy. 我们的成本加价实际上是消费者愿意接受的价格，如果你这样思考，这是一个非常不同的策略。</div>
-    <div class="quote-source">—— <span class="author">黄峥</span>《财经专访拼多多黄峥》 · 用户 · 策略 · 创新</div>
-  </div>
-
-  <div class="quote-card theme-biographies-border">
-    <div class="quote-text">We always overestimate the change that will occur in the next two years and underestimate the change that will occur in the next ten. 人们总是高估未来两年的变化，低估未来十年的变化。</div>
-    <div class="quote-source">—— <span class="author">比尔·盖茨</span>《未来之路》 · 远见 · 科技 · 趋势</div>
-  </div>
-
-  <div class="quote-card theme-biographies-border">
-    <div class="quote-text">If you don't give up, you still have a chance. Giving up is the greatest failure. 如果你不放弃，就还有机会。放弃才是最大的失败。</div>
-    <div class="quote-source">—— <span class="author">马云</span>《阿里巴巴IPO路演演讲》 · 坚持 · 创业 · 拼搏</div>
-  </div>
-
-  <div class="quote-card theme-biographies-border">
-    <div class="quote-text">创新是区别领导者和追随者的唯一标准。</div>
-    <div class="quote-source">—— <span class="author">史蒂夫·乔布斯</span>《乔布斯传记访谈》 · 创新 · 领导力 · 卓越</div>
-  </div>
-
-  <div class="quote-card theme-biographies-border">
-    <div class="quote-text">对未来越有信心，对当下越有耐心。</div>
-    <div class="quote-source">—— <span class="author">王兴</span>《美团内部交流》 · 远见 · 耐心 · 信念</div>
-  </div>
-
-  <div class="quote-card theme-biographies-border">
-    <div class="quote-text">Be fearful when others are greedy and greedy when others are fearful. 在别人贪婪时恐惧，在别人恐惧时贪婪。</div>
-    <div class="quote-source">—— <span class="author">沃伦·巴菲特</span>《巴菲特2008年纽约时报专栏》 · 逆势 · 投资 · 智慧</div>
-  </div>
-
-  <div class="quote-card theme-biographies-border">
-    <div class="quote-text">风口上的猪都能飞，但风停的时候，最先掉下来的也是猪。</div>
-    <div class="quote-source">—— <span class="author">雷军</span>《雷军公开演讲》 · 风口 · 创业 · 务实</div>
-  </div>
-
-  <div class="quote-card theme-biographies-border">
-    <div class="quote-text">Invert, always invert. 反过来想，总是反过来想。</div>
-    <div class="quote-source">—— <span class="author">查理·芒格</span>《穷查理宝典》 · 逆向思维 · 智慧 · 决策</div>
-  </div>
-
-  <div class="quote-card theme-biographies-border">
-    <div class="quote-text">方法论是通用的，但每个公司的情况是独特的，不能照搬。</div>
-    <div class="quote-source">—— <span class="author">张一鸣</span>《字节跳动9周年演讲》 · 方法论 · 管理 · 务实</div>
-  </div>
-
-  <!-- 每日小结 -->
-  <div class="summary">
-    <div class="summary-title">📝 今日小结</div>
-    <p>📜 今日与你分享 10 段关于「人物传记」的文字，来自 比尔·盖茨、黄峥、马云、史蒂夫·乔布斯、王兴、沃伦·巴菲特、雷军、查理·芒格、张一鸣 等作家。愿这些句子在你需要的时刻，给你一点力量、一点慰藉。</p>
-  </div>
-
-  <!-- 页脚 -->
-  <div class="footer">— 每日一摘 · 用文字温暖你 —</div>
+  <div class="footer">— 每日一摘 · 周末深度 —</div>
 </div>
 </body>
 </html>
