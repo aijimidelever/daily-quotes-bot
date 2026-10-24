@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>📜 每日一摘 · 人物传记</title>
+<title>⭐ 梦想的种子，需要用时间浇灌</title>
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body {
@@ -22,20 +22,25 @@
     box-shadow: 0 2px 12px rgba(0,0,0,0.04);
   }
 
-  /* 头部 - 日期与主题 */
   .header {
     text-align: center;
     padding-bottom: 24px;
     margin-bottom: 30px;
     border-bottom: 1px solid #eee;
   }
-  .date { font-size: 13px; color: #999; letter-spacing: 2px; }
-  .theme-label {
+  .date { font-size: 13px; color: #999; letter-spacing: 2px; margin-bottom: 8px; }
+  .article-title {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #222;
+    margin-bottom: 6px;
+  }
+  .theme-tag {
     display: inline-block;
-    margin-top: 10px;
-    padding: 4px 16px;
+    padding: 3px 14px;
     border-radius: 20px;
-    font-size: 13px;
+    font-size: 12px;
     color: #fff;
   }
   .theme-courage-growth { background: #e74c3c; }
@@ -43,70 +48,42 @@
   .theme-life-wisdom { background: #4caf50; }
   .theme-dreams-perseverance { background: #ff9800; }
   .theme-biographies { background: #2196f3; }
-  .theme-default { background: #9c27b0; }
 
-  /* 每日引言 */
-  .epigraph {
-    text-align: center;
-    font-size: 14px;
-    color: #888;
-    font-style: italic;
-    margin-bottom: 32px;
-    padding: 0 10px;
-  }
-  .epigraph::before { content: "「"; color: #ccc; }
-  .epigraph::after { content: "」"; color: #ccc; }
-
-  /* 语录卡片 */
-  .quote-card {
-    margin-bottom: 32px;
-    padding: 24px;
-    background: #f9f7f6;
-    border-radius: 10px;
-    border-left: 4px solid;
-    transition: background 0.2s;
-  }
-  .quote-card:hover { background: #f3f0ed; }
-  .theme-courage-growth-border { border-color: #e74c3c; }
-  .theme-love-loneliness-border { border-color: #e91e63; }
-  .theme-life-wisdom-border { border-color: #4caf50; }
-  .theme-dreams-perseverance-border { border-color: #ff9800; }
-  .theme-biographies-border { border-color: #2196f3; }
-
-  .quote-text {
-    font-size: 17px;
+  .content {
+    font-size: 16px;
     line-height: 2;
     letter-spacing: 0.5px;
-    margin-bottom: 12px;
+    color: #444;
   }
-  .quote-source {
-    font-size: 13px;
-    color: #888;
-    text-align: right;
-  }
-  .quote-source .author {
-    color: #666;
-    font-weight: 500;
-  }
-
-  /* 每日小结 */
-  .summary {
-    margin-top: 36px;
-    padding: 20px;
-    background: #f0f7ff;
-    border-radius: 10px;
-    font-size: 14px;
-    line-height: 1.9;
-    color: #555;
-  }
-  .summary-title {
-    font-size: 13px;
+  .content p { margin-bottom: 20px; text-indent: 2em; }
+  .content h2 {
+    font-size: 19px;
+    margin: 32px 0 16px;
+    padding-left: 14px;
+    border-left: 4px solid;
     font-weight: 600;
-    color: #2196f3;
-    margin-bottom: 8px;
+    color: #333;
+    text-indent: 0;
+  }
+  .content blockquote {
+    margin: 20px 0;
+    padding: 16px 20px;
+    background: #f5f2f0;
+    border-radius: 8px;
+    border-left: 4px solid #d4a574;
+    font-style: italic;
+    color: #666;
+    text-indent: 0;
+  }
+  .content blockquote .source {
+    display: block;
+    text-align: right;
+    margin-top: 8px;
+    font-size: 13px;
+    color: #999;
+    font-style: normal;
   }
 
-  /* 页脚 */
   .footer {
     margin-top: 40px;
     padding-top: 20px;
@@ -117,86 +94,56 @@
     letter-spacing: 1px;
   }
 
-  /* 响应式 */
   @media (max-width: 480px) {
     .container { padding: 24px 16px; }
-    .quote-text { font-size: 16px; }
-    .quote-card { padding: 18px; }
+    .article-title { font-size: 19px; }
+    .content { font-size: 15px; }
   }
 </style>
 </head>
 <body>
 <div class="container">
-
-  <!-- 头部 -->
   <div class="header">
     <div class="date">2026年10月24日 星期六</div>
-    <span class="theme-label theme-biographies">人物传记</span>
+    <div class="article-title">⭐ 梦想的种子，需要用时间浇灌</div>
+    <span class="theme-tag theme-dreams-perseverance">梦想与坚持</span>
   </div>
+  <div class="content">
+    梦想是指路星，坚持是脚下的路。每一个伟大的成就，都始于一个勇敢的梦想和日复一日的坚持。
 
-  <!-- 引言 -->
-  <div class="epigraph">我们读书，而后知道自己并不孤单。</div>
+<h2>⭐ 关于「梦想与坚持」的另一种解读</h2>
 
-  <!-- 语录列表 -->
-  
-  <div class="quote-card theme-biographies-border">
-    <div class="quote-text">Rule No.1: Never lose money. Rule No.2: Never forget rule No.1. 第一条规则：永远不要亏钱。第二条规则：永远不要忘记第一条。</div>
-    <div class="quote-source">—— <span class="author">沃伦·巴菲特</span>《巴菲特历年股东信》 · 投资 · 风控 · 原则</div>
+<blockquote>世界上最快乐的事，莫过于为理想而奋斗。<span class="source">—— 苏格拉底《理想国》</span></blockquote>
+
+<p>梦想的价值，不在于最终能否实现，而在于追逐的过程让你成为了什么样的人。苏格拉底的这段话激励了无数人，也提醒我们：每一个伟大的梦想，都始于一个勇敢的开始。</p>
+
+<blockquote>人生最大的荣耀不在于从不跌倒，而在于每次跌倒后都能爬起来。<span class="source">—— 纳尔逊·曼德拉《漫漫自由路》</span></blockquote>
+
+<p>坚持不是盲目的固执，而是在认清困难后依然选择前行。纳尔逊·曼德拉用自己的人生经历告诉我们，成功的路上并不拥挤，因为能坚持下来的人不多。</p>
+
+<h2>那些文字教会我们的事</h2>
+
+<blockquote>微笑着，去唱生活的歌谣。不要抱怨生活给予了太多的磨难，不必抱怨生命中有太多的曲折。<span class="source">—— 史铁生《病隙碎笔》</span></blockquote>
+
+<p>时间是最公平的裁判。史铁生的这句话背后，是对长期主义的最好诠释——不要高估短期收益，也不要低估长期积累。真正的成就，都是用时间换来的。</p>
+
+<blockquote>即使慢，驰而不息，纵会落后，纵会失败，但一定可以达到他所向的目标。<span class="source">—— 鲁迅《华盖集》</span></blockquote>
+
+<p>梦想的价值，不在于最终能否实现，而在于追逐的过程让你成为了什么样的人。鲁迅的这段话激励了无数人，也提醒我们：每一个伟大的梦想，都始于一个勇敢的开始。</p>
+
+<h2>⭐ 关于「梦想与坚持」的另一种解读</h2>
+
+<blockquote>纵有千古，横有八荒。前途似海，来日方长。<span class="source">—— 梁启超《少年中国说》</span></blockquote>
+
+<p>坚持不是盲目的固执，而是在认清困难后依然选择前行。梁启超用自己的人生经历告诉我们，成功的路上并不拥挤，因为能坚持下来的人不多。</p>
+
+<blockquote>没有一颗心，会因为追求梦想而受伤。当你真心渴望某样东西时，整个宇宙都会来帮忙。<span class="source">—— 保罗·柯艾略《牧羊少年奇幻之旅》</span></blockquote>
+
+<p>时间是最公平的裁判。保罗·柯艾略的这句话背后，是对长期主义的最好诠释——不要高估短期收益，也不要低估长期积累。真正的成就，都是用时间换来的。</p>
+
+<p>我们收集这些文字，不是为了怀旧，而是为了在喧嚣的世界中，保留一方可以静心思考的空间。⭐ 愿文字的温度，能陪你度过每一个需要力量的日子。</p>
   </div>
-
-  <div class="quote-card theme-biographies-border">
-    <div class="quote-text">Be fearful when others are greedy and greedy when others are fearful. 在别人贪婪时恐惧，在别人恐惧时贪婪。</div>
-    <div class="quote-source">—— <span class="author">沃伦·巴菲特</span>《巴菲特2008年纽约时报专栏》 · 逆势 · 投资 · 智慧</div>
-  </div>
-
-  <div class="quote-card theme-biographies-border">
-    <div class="quote-text">有时候不是因为我们看到了机会才去坚持，而是因为坚持了才看到机会。</div>
-    <div class="quote-source">—— <span class="author">马化腾</span>《马化腾内部讲话》 · 坚持 · 机遇 · 信念</div>
-  </div>
-
-  <div class="quote-card theme-biographies-border">
-    <div class="quote-text">对未来越有信心，对当下越有耐心。</div>
-    <div class="quote-source">—— <span class="author">王兴</span>《美团内部交流》 · 远见 · 耐心 · 信念</div>
-  </div>
-
-  <div class="quote-card theme-biographies-border">
-    <div class="quote-text">华为没有成功，只是在成长。</div>
-    <div class="quote-source">—— <span class="author">任正非</span>《华为的冬天》 · 谦逊 · 危机感 · 成长</div>
-  </div>
-
-  <div class="quote-card theme-biographies-border">
-    <div class="quote-text">Margin is a sign of weakness. 利润率是软弱的标志。</div>
-    <div class="quote-source">—— <span class="author">杰夫·贝索斯</span>《1997年贝索斯致股东信》 · 增长 · 长远 · 格局</div>
-  </div>
-
-  <div class="quote-card theme-biographies-border">
-    <div class="quote-text">Your most unhappy customers are your greatest source of learning. 最不满意的客户是你最好的学习来源。</div>
-    <div class="quote-source">—— <span class="author">比尔·盖茨</span>《比尔·盖茨访谈录》 · 客户 · 学习 · 成长</div>
-  </div>
-
-  <div class="quote-card theme-biographies-border">
-    <div class="quote-text">任何成功都不是偶然的，它来自于比他人更执着的追求。</div>
-    <div class="quote-source">—— <span class="author">雷军</span>《小米公司内部讲话》 · 执着 · 成功 · 努力</div>
-  </div>
-
-  <div class="quote-card theme-biographies-border">
-    <div class="quote-text">人们往往高估自己一年能做的事，而低估自己十年能做的事。</div>
-    <div class="quote-source">—— <span class="author">李彦宏</span>《李彦宏内部演讲》 · 远见 · 耐心 · 坚持</div>
-  </div>
-
-  <div class="quote-card theme-biographies-border">
-    <div class="quote-text">方法论是通用的，但每个公司的情况是独特的，不能照搬。</div>
-    <div class="quote-source">—— <span class="author">张一鸣</span>《字节跳动9周年演讲》 · 方法论 · 管理 · 务实</div>
-  </div>
-
-  <!-- 每日小结 -->
-  <div class="summary">
-    <div class="summary-title">📝 今日小结</div>
-    <p>📜 今日与你分享 10 段关于「人物传记」的文字，来自 沃伦·巴菲特、马化腾、王兴、任正非、杰夫·贝索斯、比尔·盖茨、雷军、李彦宏、张一鸣 等作家。愿这些句子在你需要的时刻，给你一点力量、一点慰藉。</p>
-  </div>
-
-  <!-- 页脚 -->
-  <div class="footer">— 每日一摘 · 用文字温暖你 —</div>
+  <div class="footer">— 每日一摘 · 周末深度 —</div>
 </div>
 </body>
 </html>
