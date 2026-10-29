@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>⭐ 每日一摘 · 梦想与坚持</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", "Helvetica Neue", sans-serif;
+    background: #faf9f8;
+    color: #333;
+    line-height: 1.8;
+    padding: 20px;
+  }
+  .container {
+    max-width: 640px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 12px;
+    padding: 40px 30px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+  }
+
+  /* 头部 - 日期与主题 */
+  .header {
+    text-align: center;
+    padding-bottom: 24px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #eee;
+  }
+  .date { font-size: 13px; color: #999; letter-spacing: 2px; }
+  .theme-label {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 4px 16px;
+    border-radius: 20px;
+    font-size: 13px;
+    color: #fff;
+  }
+  .theme-courage-growth { background: #e74c3c; }
+  .theme-love-loneliness { background: #e91e63; }
+  .theme-life-wisdom { background: #4caf50; }
+  .theme-dreams-perseverance { background: #ff9800; }
+  .theme-biographies { background: #2196f3; }
+  .theme-default { background: #9c27b0; }
+
+  /* 每日引言 */
+  .epigraph {
+    text-align: center;
+    font-size: 14px;
+    color: #888;
+    font-style: italic;
+    margin-bottom: 32px;
+    padding: 0 10px;
+  }
+  .epigraph::before { content: "「"; color: #ccc; }
+  .epigraph::after { content: "」"; color: #ccc; }
+
+  /* 语录卡片 */
+  .quote-card {
+    margin-bottom: 32px;
+    padding: 24px;
+    background: #f9f7f6;
+    border-radius: 10px;
+    border-left: 4px solid;
+    transition: background 0.2s;
+  }
+  .quote-card:hover { background: #f3f0ed; }
+  .theme-courage-growth-border { border-color: #e74c3c; }
+  .theme-love-loneliness-border { border-color: #e91e63; }
+  .theme-life-wisdom-border { border-color: #4caf50; }
+  .theme-dreams-perseverance-border { border-color: #ff9800; }
+  .theme-biographies-border { border-color: #2196f3; }
+
+  .quote-text {
+    font-size: 17px;
+    line-height: 2;
+    letter-spacing: 0.5px;
+    margin-bottom: 12px;
+  }
+  .quote-source {
+    font-size: 13px;
+    color: #888;
+    text-align: right;
+  }
+  .quote-source .author {
+    color: #666;
+    font-weight: 500;
+  }
+
+  /* 每日小结 */
+  .summary {
+    margin-top: 36px;
+    padding: 20px;
+    background: #f0f7ff;
+    border-radius: 10px;
+    font-size: 14px;
+    line-height: 1.9;
+    color: #555;
+  }
+  .summary-title {
+    font-size: 13px;
+    font-weight: 600;
+    color: #2196f3;
+    margin-bottom: 8px;
+  }
+
+  /* 页脚 */
+  .footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    text-align: center;
+    font-size: 12px;
+    color: #bbb;
+    letter-spacing: 1px;
+  }
+
+  /* 响应式 */
+  @media (max-width: 480px) {
+    .container { padding: 24px 16px; }
+    .quote-text { font-size: 16px; }
+    .quote-card { padding: 18px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <!-- 头部 -->
+  <div class="header">
+    <div class="date">2026年10月29日 星期四</div>
+    <span class="theme-label theme-dreams-perseverance">梦想与坚持</span>
+  </div>
+
+  <!-- 引言 -->
+  <div class="epigraph">有些句子，初见是惊艳，再见是人生。</div>
+
+  <!-- 语录列表 -->
+  
+  <div class="quote-card theme-dreams-perseverance-border">
+    <div class="quote-text">世上本没有路，走的人多了，也便成了路。</div>
+    <div class="quote-source">—— <span class="author">鲁迅</span>《热风》 · 开拓 · 行动 · 勇气</div>
+  </div>
+
+  <div class="quote-card theme-dreams-perseverance-border">
+    <div class="quote-text">你的时间有限，所以不要浪费时间为别人而活。不要被教条所限，不要活在别人的观念里。不要让别人的意见左右自己内心的声音。最重要的是，勇敢地去追随自己的心灵和直觉。</div>
+    <div class="quote-source">—— <span class="author">史蒂夫·乔布斯</span>《斯坦福大学毕业演讲》 · 梦想 · 勇气 · 独立</div>
+  </div>
+
+  <div class="quote-card theme-dreams-perseverance-border">
+    <div class="quote-text">不积跬步，无以至千里；不积小流，无以成江海。</div>
+    <div class="quote-source">—— <span class="author">荀子</span>《荀子·劝学》 · 积累 · 坚持 · 行动</div>
+  </div>
+
+  <div class="quote-card theme-dreams-perseverance-border">
+    <div class="quote-text">在刺激与反应之间，存在一个空间。在这个空间中，是我们的自由和力量去选择我们的回应。我们的成长和幸福全在于此。</div>
+    <div class="quote-source">—— <span class="author">史蒂芬·柯维</span>《高效能人士的七个习惯》 · 选择 · 自由 · 成长</div>
+  </div>
+
+  <div class="quote-card theme-dreams-perseverance-border">
+    <div class="quote-text">一个人并不是生来要给打败的，你尽可以把他消灭掉，可就是打不败他。</div>
+    <div class="quote-source">—— <span class="author">海明威</span>《老人与海》 · 坚韧 · 不屈 · 精神</div>
+  </div>
+
+  <div class="quote-card theme-dreams-perseverance-border">
+    <div class="quote-text">I have a dream that one day this nation will rise up and live out the true meaning of its creed. 我有一个梦想，有一天这个国家会站立起来，真正实现其信条的真谛。</div>
+    <div class="quote-source">—— <span class="author">马丁·路德·金</span>《我有一个梦想》 · 梦想 · 平等 · 信念</div>
+  </div>
+
+  <div class="quote-card theme-dreams-perseverance-border">
+    <div class="quote-text">积极主动不仅指行事的态度，还意味着人一定要对自己的人生负责。个人行为取决于自身的抉择，而不是外在的环境。</div>
+    <div class="quote-source">—— <span class="author">史蒂芬·柯维</span>《高效能人士的七个习惯》 · 主动 · 责任 · 选择</div>
+  </div>
+
+  <div class="quote-card theme-dreams-perseverance-border">
+    <div class="quote-text">愿中国青年都摆脱冷气，只是向上走，不必听自暴自弃者流的话。能做事的做事，能发声的发声。有一分热，发一分光。</div>
+    <div class="quote-source">—— <span class="author">鲁迅</span>《热风》 · 青年 · 担当 · 热血</div>
+  </div>
+
+  <div class="quote-card theme-dreams-perseverance-border">
+    <div class="quote-text">纵有千古，横有八荒。前途似海，来日方长。</div>
+    <div class="quote-source">—— <span class="author">梁启超</span>《少年中国说》 · 希望 · 抱负 · 未来</div>
+  </div>
+
+  <div class="quote-card theme-dreams-perseverance-border">
+    <div class="quote-text">在事情未成功之前，一切总看似不可能。</div>
+    <div class="quote-source">—— <span class="author">纳尔逊·曼德拉</span>《漫漫自由路》 · 坚持 · 信念 · 勇气</div>
+  </div>
+
+  <!-- 每日小结 -->
+  <div class="summary">
+    <div class="summary-title">📝 今日小结</div>
+    <p>⭐ 今日与你分享 10 段关于「梦想与坚持」的文字，来自 鲁迅、史蒂夫·乔布斯、荀子、史蒂芬·柯维、海明威、马丁·路德·金、梁启超、纳尔逊·曼德拉 等作家。愿这些句子在你需要的时刻，给你一点力量、一点慰藉。</p>
+  </div>
+
+  <!-- 页脚 -->
+  <div class="footer">— 每日一摘 · 用文字温暖你 —</div>
+</div>
+</body>
+</html>
