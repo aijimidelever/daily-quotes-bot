@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>📜 每日一摘 · 人物传记</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", "Helvetica Neue", sans-serif;
+    background: #faf9f8;
+    color: #333;
+    line-height: 1.8;
+    padding: 20px;
+  }
+  .container {
+    max-width: 640px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 12px;
+    padding: 40px 30px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+  }
+
+  /* 头部 - 日期与主题 */
+  .header {
+    text-align: center;
+    padding-bottom: 24px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #eee;
+  }
+  .date { font-size: 13px; color: #999; letter-spacing: 2px; }
+  .theme-label {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 4px 16px;
+    border-radius: 20px;
+    font-size: 13px;
+    color: #fff;
+  }
+  .theme-courage-growth { background: #e74c3c; }
+  .theme-love-loneliness { background: #e91e63; }
+  .theme-life-wisdom { background: #4caf50; }
+  .theme-dreams-perseverance { background: #ff9800; }
+  .theme-biographies { background: #2196f3; }
+  .theme-default { background: #9c27b0; }
+
+  /* 每日引言 */
+  .epigraph {
+    text-align: center;
+    font-size: 14px;
+    color: #888;
+    font-style: italic;
+    margin-bottom: 32px;
+    padding: 0 10px;
+  }
+  .epigraph::before { content: "「"; color: #ccc; }
+  .epigraph::after { content: "」"; color: #ccc; }
+
+  /* 语录卡片 */
+  .quote-card {
+    margin-bottom: 32px;
+    padding: 24px;
+    background: #f9f7f6;
+    border-radius: 10px;
+    border-left: 4px solid;
+    transition: background 0.2s;
+  }
+  .quote-card:hover { background: #f3f0ed; }
+  .theme-courage-growth-border { border-color: #e74c3c; }
+  .theme-love-loneliness-border { border-color: #e91e63; }
+  .theme-life-wisdom-border { border-color: #4caf50; }
+  .theme-dreams-perseverance-border { border-color: #ff9800; }
+  .theme-biographies-border { border-color: #2196f3; }
+
+  .quote-text {
+    font-size: 17px;
+    line-height: 2;
+    letter-spacing: 0.5px;
+    margin-bottom: 12px;
+  }
+  .quote-source {
+    font-size: 13px;
+    color: #888;
+    text-align: right;
+  }
+  .quote-source .author {
+    color: #666;
+    font-weight: 500;
+  }
+
+  /* 每日小结 */
+  .summary {
+    margin-top: 36px;
+    padding: 20px;
+    background: #f0f7ff;
+    border-radius: 10px;
+    font-size: 14px;
+    line-height: 1.9;
+    color: #555;
+  }
+  .summary-title {
+    font-size: 13px;
+    font-weight: 600;
+    color: #2196f3;
+    margin-bottom: 8px;
+  }
+
+  /* 页脚 */
+  .footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    text-align: center;
+    font-size: 12px;
+    color: #bbb;
+    letter-spacing: 1px;
+  }
+
+  /* 响应式 */
+  @media (max-width: 480px) {
+    .container { padding: 24px 16px; }
+    .quote-text { font-size: 16px; }
+    .quote-card { padding: 18px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <!-- 头部 -->
+  <div class="header">
+    <div class="date">2026年11月06日 星期五</div>
+    <span class="theme-label theme-biographies">人物传记</span>
+  </div>
+
+  <!-- 引言 -->
+  <div class="epigraph">每一段文字都是一扇窗，推开它，便是另一个世界。</div>
+
+  <!-- 语录列表 -->
+  
+  <div class="quote-card theme-biographies-border">
+    <div class="quote-text">任何成功都不是偶然的，它来自于比他人更执着的追求。</div>
+    <div class="quote-source">—— <span class="author">雷军</span>《小米公司内部讲话》 · 执着 · 成功 · 努力</div>
+  </div>
+
+  <div class="quote-card theme-biographies-border">
+    <div class="quote-text">无论做什么，都要做到极致。工作就是最好的修行。</div>
+    <div class="quote-source">—— <span class="author">稻盛和夫</span>《工匠精神》 · 极致 · 工匠 · 修行</div>
+  </div>
+
+  <div class="quote-card theme-biographies-border">
+    <div class="quote-text">一个人再有能力，也干不过一群人；一群人再有能力，也干不过一个制度。</div>
+    <div class="quote-source">—— <span class="author">任正非</span>《任正非内部讲话》 · 管理 · 制度 · 团队</div>
+  </div>
+
+  <div class="quote-card theme-biographies-border">
+    <div class="quote-text">宁做创业狼，不做打工狗。当然这话粗了些，但道理是对的。</div>
+    <div class="quote-source">—— <span class="author">周鸿祎</span>《周鸿祎公开演讲》 · 创业 · 拼搏 · 志向</div>
+  </div>
+
+  <div class="quote-card theme-biographies-border">
+    <div class="quote-text">Stay hungry, stay foolish. 求知若饥，虚心若愚。</div>
+    <div class="quote-source">—— <span class="author">史蒂夫·乔布斯</span>《2005年斯坦福大学毕业演讲》 · 求知 · 谦逊 · 创新</div>
+  </div>
+
+  <div class="quote-card theme-biographies-border">
+    <div class="quote-text">Develop a company as a product. 像打造产品一样打造公司。</div>
+    <div class="quote-source">—— <span class="author">张一鸣</span>《字节跳动内部沟通》 · 管理 · 产品思维 · 组织</div>
+  </div>
+
+  <div class="quote-card theme-biographies-border">
+    <div class="quote-text">今天很残酷，明天更残酷，后天很美好，但绝大多数人死在明天晚上。</div>
+    <div class="quote-source">—— <span class="author">马云</span>《马云：未来已来》 · 坚持 · 创业 · 信念</div>
+  </div>
+
+  <div class="quote-card theme-biographies-border">
+    <div class="quote-text">We are what we choose. 我们就是我们所做选择的总和。</div>
+    <div class="quote-source">—— <span class="author">杰夫·贝索斯</span>《2010年普林斯顿大学毕业演讲》 · 选择 · 人生 · 责任</div>
+  </div>
+
+  <div class="quote-card theme-biographies-border">
+    <div class="quote-text">We always overestimate the change that will occur in the next two years and underestimate the change that will occur in the next ten. 人们总是高估未来两年的变化，低估未来十年的变化。</div>
+    <div class="quote-source">—— <span class="author">比尔·盖茨</span>《未来之路》 · 远见 · 科技 · 趋势</div>
+  </div>
+
+  <div class="quote-card theme-biographies-border">
+    <div class="quote-text">When something is important enough, you do it even if the odds are not in your favor. 当一件事足够重要时，即使胜算不大，你也要去做。</div>
+    <div class="quote-source">—— <span class="author">埃隆·马斯克</span>《埃隆·马斯克传》 · 坚持 · 信念 · 行动力</div>
+  </div>
+
+  <!-- 每日小结 -->
+  <div class="summary">
+    <div class="summary-title">📝 今日小结</div>
+    <p>📜 今日与你分享 10 段关于「人物传记」的文字，来自 雷军、稻盛和夫、任正非、周鸿祎、史蒂夫·乔布斯、张一鸣、马云、杰夫·贝索斯、比尔·盖茨、埃隆·马斯克 等作家。愿这些句子在你需要的时刻，给你一点力量、一点慰藉。</p>
+  </div>
+
+  <!-- 页脚 -->
+  <div class="footer">— 每日一摘 · 用文字温暖你 —</div>
+</div>
+</body>
+</html>
