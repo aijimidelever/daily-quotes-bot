@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🌿 每日一摘 · 生活与智慧</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", "Helvetica Neue", sans-serif;
+    background: #faf9f8;
+    color: #333;
+    line-height: 1.8;
+    padding: 20px;
+  }
+  .container {
+    max-width: 640px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 12px;
+    padding: 40px 30px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+  }
+
+  /* 头部 - 日期与主题 */
+  .header {
+    text-align: center;
+    padding-bottom: 24px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #eee;
+  }
+  .date { font-size: 13px; color: #999; letter-spacing: 2px; }
+  .theme-label {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 4px 16px;
+    border-radius: 20px;
+    font-size: 13px;
+    color: #fff;
+  }
+  .theme-courage-growth { background: #e74c3c; }
+  .theme-love-loneliness { background: #e91e63; }
+  .theme-life-wisdom { background: #4caf50; }
+  .theme-dreams-perseverance { background: #ff9800; }
+  .theme-biographies { background: #2196f3; }
+  .theme-default { background: #9c27b0; }
+
+  /* 每日引言 */
+  .epigraph {
+    text-align: center;
+    font-size: 14px;
+    color: #888;
+    font-style: italic;
+    margin-bottom: 32px;
+    padding: 0 10px;
+  }
+  .epigraph::before { content: "「"; color: #ccc; }
+  .epigraph::after { content: "」"; color: #ccc; }
+
+  /* 语录卡片 */
+  .quote-card {
+    margin-bottom: 32px;
+    padding: 24px;
+    background: #f9f7f6;
+    border-radius: 10px;
+    border-left: 4px solid;
+    transition: background 0.2s;
+  }
+  .quote-card:hover { background: #f3f0ed; }
+  .theme-courage-growth-border { border-color: #e74c3c; }
+  .theme-love-loneliness-border { border-color: #e91e63; }
+  .theme-life-wisdom-border { border-color: #4caf50; }
+  .theme-dreams-perseverance-border { border-color: #ff9800; }
+  .theme-biographies-border { border-color: #2196f3; }
+
+  .quote-text {
+    font-size: 17px;
+    line-height: 2;
+    letter-spacing: 0.5px;
+    margin-bottom: 12px;
+  }
+  .quote-source {
+    font-size: 13px;
+    color: #888;
+    text-align: right;
+  }
+  .quote-source .author {
+    color: #666;
+    font-weight: 500;
+  }
+
+  /* 每日小结 */
+  .summary {
+    margin-top: 36px;
+    padding: 20px;
+    background: #f0f7ff;
+    border-radius: 10px;
+    font-size: 14px;
+    line-height: 1.9;
+    color: #555;
+  }
+  .summary-title {
+    font-size: 13px;
+    font-weight: 600;
+    color: #2196f3;
+    margin-bottom: 8px;
+  }
+
+  /* 页脚 */
+  .footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    text-align: center;
+    font-size: 12px;
+    color: #bbb;
+    letter-spacing: 1px;
+  }
+
+  /* 响应式 */
+  @media (max-width: 480px) {
+    .container { padding: 24px 16px; }
+    .quote-text { font-size: 16px; }
+    .quote-card { padding: 18px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <!-- 头部 -->
+  <div class="header">
+    <div class="date">2026年11月11日 星期三</div>
+    <span class="theme-label theme-life-wisdom">生活与智慧</span>
+  </div>
+
+  <!-- 引言 -->
+  <div class="epigraph">经典从不因岁月褪色，反而在时光中愈发璀璨。</div>
+
+  <!-- 语录列表 -->
+  
+  <div class="quote-card theme-life-wisdom-border">
+    <div class="quote-text">天下第一件好事还是读书。</div>
+    <div class="quote-source">—— <span class="author">冯唐</span>《成事》 · 读书 · 好学 · 佳事</div>
+  </div>
+
+  <div class="quote-card theme-life-wisdom-border">
+    <div class="quote-text">一切烦恼，都是由贪心开始。要经常学习减少自己的欲望。</div>
+    <div class="quote-source">—— <span class="author">蔡澜</span>《人间好玩》 · 贪心 · 欲望 · 减法</div>
+  </div>
+
+  <div class="quote-card theme-life-wisdom-border">
+    <div class="quote-text">外在的眼睛看见现象，内在的眼睛看到本质。</div>
+    <div class="quote-source">—— <span class="author">周国平</span>《安静》 · 洞察 · 内在 · 本质</div>
+  </div>
+
+  <div class="quote-card theme-life-wisdom-border">
+    <div class="quote-text">一个真正的旅行家必是一个流浪者，经历流浪者的快乐、诱惑和探险意念。</div>
+    <div class="quote-source">—— <span class="author">林语堂</span>《生活的艺术》 · 旅行 · 自由 · 探索</div>
+  </div>
+
+  <div class="quote-card theme-life-wisdom-border">
+    <div class="quote-text">世界上最伟大的事，是一个人懂得如何做自己的主人。</div>
+    <div class="quote-source">—— <span class="author">蒙田</span>《随笔集》 · 自律 · 自主 · 修为</div>
+  </div>
+
+  <div class="quote-card theme-life-wisdom-border">
+    <div class="quote-text">人有悲欢离合，月有阴晴圆缺，此事古难全。</div>
+    <div class="quote-source">—— <span class="author">苏轼</span>《水调歌头·明月几时有》 · 人生 · 无常 · 接受</div>
+  </div>
+
+  <div class="quote-card theme-life-wisdom-border">
+    <div class="quote-text">不戚戚于贫贱，不汲汲于富贵。</div>
+    <div class="quote-source">—— <span class="author">陶渊明</span>《五柳先生传》 · 淡泊 · 安贫 · 志趣</div>
+  </div>
+
+  <div class="quote-card theme-life-wisdom-border">
+    <div class="quote-text">知人者智，自知者明。胜人者有力，自胜者强。</div>
+    <div class="quote-source">—— <span class="author">老子</span>《道德经》 · 自知 · 自省 · 强大</div>
+  </div>
+
+  <div class="quote-card theme-life-wisdom-border">
+    <div class="quote-text">人生的意义就在于吃吃喝喝，以兴趣为工作，以生活为重心。</div>
+    <div class="quote-source">—— <span class="author">蔡澜</span>《人间好玩》 · 乐趣 · 吃喝 · 兴趣</div>
+  </div>
+
+  <!-- 每日小结 -->
+  <div class="summary">
+    <div class="summary-title">📝 今日小结</div>
+    <p>🌿 今日与你分享 9 段关于「生活与智慧」的文字，来自 冯唐、蔡澜、周国平、林语堂、蒙田、苏轼、陶渊明、老子 等作家。愿这些句子在你需要的时刻，给你一点力量、一点慰藉。</p>
+  </div>
+
+  <!-- 页脚 -->
+  <div class="footer">— 每日一摘 · 用文字温暖你 —</div>
+</div>
+</body>
+</html>
