@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>⭐ 每日一摘 · 梦想与坚持</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", "Helvetica Neue", sans-serif;
+    background: #faf9f8;
+    color: #333;
+    line-height: 1.8;
+    padding: 20px;
+  }
+  .container {
+    max-width: 640px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 12px;
+    padding: 40px 30px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+  }
+
+  /* 头部 - 日期与主题 */
+  .header {
+    text-align: center;
+    padding-bottom: 24px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #eee;
+  }
+  .date { font-size: 13px; color: #999; letter-spacing: 2px; }
+  .theme-label {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 4px 16px;
+    border-radius: 20px;
+    font-size: 13px;
+    color: #fff;
+  }
+  .theme-courage-growth { background: #e74c3c; }
+  .theme-love-loneliness { background: #e91e63; }
+  .theme-life-wisdom { background: #4caf50; }
+  .theme-dreams-perseverance { background: #ff9800; }
+  .theme-biographies { background: #2196f3; }
+  .theme-default { background: #9c27b0; }
+
+  /* 每日引言 */
+  .epigraph {
+    text-align: center;
+    font-size: 14px;
+    color: #888;
+    font-style: italic;
+    margin-bottom: 32px;
+    padding: 0 10px;
+  }
+  .epigraph::before { content: "「"; color: #ccc; }
+  .epigraph::after { content: "」"; color: #ccc; }
+
+  /* 语录卡片 */
+  .quote-card {
+    margin-bottom: 32px;
+    padding: 24px;
+    background: #f9f7f6;
+    border-radius: 10px;
+    border-left: 4px solid;
+    transition: background 0.2s;
+  }
+  .quote-card:hover { background: #f3f0ed; }
+  .theme-courage-growth-border { border-color: #e74c3c; }
+  .theme-love-loneliness-border { border-color: #e91e63; }
+  .theme-life-wisdom-border { border-color: #4caf50; }
+  .theme-dreams-perseverance-border { border-color: #ff9800; }
+  .theme-biographies-border { border-color: #2196f3; }
+
+  .quote-text {
+    font-size: 17px;
+    line-height: 2;
+    letter-spacing: 0.5px;
+    margin-bottom: 12px;
+  }
+  .quote-source {
+    font-size: 13px;
+    color: #888;
+    text-align: right;
+  }
+  .quote-source .author {
+    color: #666;
+    font-weight: 500;
+  }
+
+  /* 每日小结 */
+  .summary {
+    margin-top: 36px;
+    padding: 20px;
+    background: #f0f7ff;
+    border-radius: 10px;
+    font-size: 14px;
+    line-height: 1.9;
+    color: #555;
+  }
+  .summary-title {
+    font-size: 13px;
+    font-weight: 600;
+    color: #2196f3;
+    margin-bottom: 8px;
+  }
+
+  /* 页脚 */
+  .footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    text-align: center;
+    font-size: 12px;
+    color: #bbb;
+    letter-spacing: 1px;
+  }
+
+  /* 响应式 */
+  @media (max-width: 480px) {
+    .container { padding: 24px 16px; }
+    .quote-text { font-size: 16px; }
+    .quote-card { padding: 18px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <!-- 头部 -->
+  <div class="header">
+    <div class="date">2026年11月12日 星期四</div>
+    <span class="theme-label theme-dreams-perseverance">梦想与坚持</span>
+  </div>
+
+  <!-- 引言 -->
+  <div class="epigraph">经典从不因岁月褪色，反而在时光中愈发璀璨。</div>
+
+  <!-- 语录列表 -->
+  
+  <div class="quote-card theme-dreams-perseverance-border">
+    <div class="quote-text">那些你早起努力的日子，那些你熬夜刻苦的时光，那些你觉得太累了不想再努力但仍然咬牙坚持的岁月——这就是梦想的意义。</div>
+    <div class="quote-source">—— <span class="author">科比·布莱恩特</span>《曼巴精神》 · 努力 · 坚持 · 梦想</div>
+  </div>
+
+  <div class="quote-card theme-dreams-perseverance-border">
+    <div class="quote-text">没有一颗心，会因为追求梦想而受伤。当你真心渴望某样东西时，整个宇宙都会来帮忙。</div>
+    <div class="quote-source">—— <span class="author">保罗·柯艾略</span>《牧羊少年奇幻之旅》 · 梦想 · 勇气 · 信念</div>
+  </div>
+
+  <div class="quote-card theme-dreams-perseverance-border">
+    <div class="quote-text">当你真心渴望某样东西时，整个宇宙都会来帮忙。</div>
+    <div class="quote-source">—— <span class="author">保罗·柯艾略</span>《牧羊少年奇幻之旅》 · 梦想 · 信念 · 坚持</div>
+  </div>
+
+  <div class="quote-card theme-dreams-perseverance-border">
+    <div class="quote-text">人生的价值，并不是用时间，而是用深度去衡量的。</div>
+    <div class="quote-source">—— <span class="author">列夫·托尔斯泰</span>《战争与和平》 · 价值 · 深度 · 人生</div>
+  </div>
+
+  <div class="quote-card theme-dreams-perseverance-border">
+    <div class="quote-text">微笑着，去唱生活的歌谣。不要抱怨生活给予了太多的磨难，不必抱怨生命中有太多的曲折。</div>
+    <div class="quote-source">—— <span class="author">史铁生</span>《病隙碎笔》 · 乐观 · 坚韧 · 生活</div>
+  </div>
+
+  <div class="quote-card theme-dreams-perseverance-border">
+    <div class="quote-text">付出不亚于任何人的努力，神灵都会相助。</div>
+    <div class="quote-source">—— <span class="author">稻盛和夫</span>《干法》 · 努力 · 坚持 · 信念</div>
+  </div>
+
+  <div class="quote-card theme-dreams-perseverance-border">
+    <div class="quote-text">积极主动不仅指行事的态度，还意味着人一定要对自己的人生负责。个人行为取决于自身的抉择，而不是外在的环境。</div>
+    <div class="quote-source">—— <span class="author">史蒂芬·柯维</span>《高效能人士的七个习惯》 · 主动 · 责任 · 选择</div>
+  </div>
+
+  <div class="quote-card theme-dreams-perseverance-border">
+    <div class="quote-text">在事情未成功之前，一切总看似不可能。</div>
+    <div class="quote-source">—— <span class="author">纳尔逊·曼德拉</span>《漫漫自由路》 · 坚持 · 信念 · 勇气</div>
+  </div>
+
+  <div class="quote-card theme-dreams-perseverance-border">
+    <div class="quote-text">人生最重要的不是你站在哪里，而是你朝着什么方向走。</div>
+    <div class="quote-source">—— <span class="author">稻盛和夫</span>《活法》 · 梦想 · 方向 · 人生</div>
+  </div>
+
+  <div class="quote-card theme-dreams-perseverance-border">
+    <div class="quote-text">古之立大事者，不惟有超世之才，亦必有坚忍不拔之志。</div>
+    <div class="quote-source">—— <span class="author">苏轼</span>《晁错论》 · 坚韧 · 志向 · 毅力</div>
+  </div>
+
+  <!-- 每日小结 -->
+  <div class="summary">
+    <div class="summary-title">📝 今日小结</div>
+    <p>⭐ 今日与你分享 10 段关于「梦想与坚持」的文字，来自 科比·布莱恩特、保罗·柯艾略、列夫·托尔斯泰、史铁生、稻盛和夫、史蒂芬·柯维、纳尔逊·曼德拉、苏轼 等作家。愿这些句子在你需要的时刻，给你一点力量、一点慰藉。</p>
+  </div>
+
+  <!-- 页脚 -->
+  <div class="footer">— 每日一摘 · 用文字温暖你 —</div>
+</div>
+</body>
+</html>
