@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>📜 每日一摘 · 人物传记</title>
+<title>💕 爱不是占有，是如其所是</title>
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body {
@@ -22,20 +22,25 @@
     box-shadow: 0 2px 12px rgba(0,0,0,0.04);
   }
 
-  /* 头部 - 日期与主题 */
   .header {
     text-align: center;
     padding-bottom: 24px;
     margin-bottom: 30px;
     border-bottom: 1px solid #eee;
   }
-  .date { font-size: 13px; color: #999; letter-spacing: 2px; }
-  .theme-label {
+  .date { font-size: 13px; color: #999; letter-spacing: 2px; margin-bottom: 8px; }
+  .article-title {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #222;
+    margin-bottom: 6px;
+  }
+  .theme-tag {
     display: inline-block;
-    margin-top: 10px;
-    padding: 4px 16px;
+    padding: 3px 14px;
     border-radius: 20px;
-    font-size: 13px;
+    font-size: 12px;
     color: #fff;
   }
   .theme-courage-growth { background: #e74c3c; }
@@ -43,70 +48,42 @@
   .theme-life-wisdom { background: #4caf50; }
   .theme-dreams-perseverance { background: #ff9800; }
   .theme-biographies { background: #2196f3; }
-  .theme-default { background: #9c27b0; }
 
-  /* 每日引言 */
-  .epigraph {
-    text-align: center;
-    font-size: 14px;
-    color: #888;
-    font-style: italic;
-    margin-bottom: 32px;
-    padding: 0 10px;
-  }
-  .epigraph::before { content: "「"; color: #ccc; }
-  .epigraph::after { content: "」"; color: #ccc; }
-
-  /* 语录卡片 */
-  .quote-card {
-    margin-bottom: 32px;
-    padding: 24px;
-    background: #f9f7f6;
-    border-radius: 10px;
-    border-left: 4px solid;
-    transition: background 0.2s;
-  }
-  .quote-card:hover { background: #f3f0ed; }
-  .theme-courage-growth-border { border-color: #e74c3c; }
-  .theme-love-loneliness-border { border-color: #e91e63; }
-  .theme-life-wisdom-border { border-color: #4caf50; }
-  .theme-dreams-perseverance-border { border-color: #ff9800; }
-  .theme-biographies-border { border-color: #2196f3; }
-
-  .quote-text {
-    font-size: 17px;
+  .content {
+    font-size: 16px;
     line-height: 2;
     letter-spacing: 0.5px;
-    margin-bottom: 12px;
+    color: #444;
   }
-  .quote-source {
-    font-size: 13px;
-    color: #888;
-    text-align: right;
-  }
-  .quote-source .author {
-    color: #666;
-    font-weight: 500;
-  }
-
-  /* 每日小结 */
-  .summary {
-    margin-top: 36px;
-    padding: 20px;
-    background: #f0f7ff;
-    border-radius: 10px;
-    font-size: 14px;
-    line-height: 1.9;
-    color: #555;
-  }
-  .summary-title {
-    font-size: 13px;
+  .content p { margin-bottom: 20px; text-indent: 2em; }
+  .content h2 {
+    font-size: 19px;
+    margin: 32px 0 16px;
+    padding-left: 14px;
+    border-left: 4px solid;
     font-weight: 600;
-    color: #2196f3;
-    margin-bottom: 8px;
+    color: #333;
+    text-indent: 0;
+  }
+  .content blockquote {
+    margin: 20px 0;
+    padding: 16px 20px;
+    background: #f5f2f0;
+    border-radius: 8px;
+    border-left: 4px solid #d4a574;
+    font-style: italic;
+    color: #666;
+    text-indent: 0;
+  }
+  .content blockquote .source {
+    display: block;
+    text-align: right;
+    margin-top: 8px;
+    font-size: 13px;
+    color: #999;
+    font-style: normal;
   }
 
-  /* 页脚 */
   .footer {
     margin-top: 40px;
     padding-top: 20px;
@@ -117,86 +94,56 @@
     letter-spacing: 1px;
   }
 
-  /* 响应式 */
   @media (max-width: 480px) {
     .container { padding: 24px 16px; }
-    .quote-text { font-size: 16px; }
-    .quote-card { padding: 18px; }
+    .article-title { font-size: 19px; }
+    .content { font-size: 15px; }
   }
 </style>
 </head>
 <body>
 <div class="container">
-
-  <!-- 头部 -->
   <div class="header">
     <div class="date">2026年11月14日 星期六</div>
-    <span class="theme-label theme-biographies">人物传记</span>
+    <div class="article-title">💕 爱不是占有，是如其所是</div>
+    <span class="theme-tag theme-love-loneliness">爱与孤独</span>
   </div>
+  <div class="content">
+    爱是人类的永恒主题，而孤独则是每个人终将面对的功课。当我们学会与孤独共处，才能真正理解爱的意义。
 
-  <!-- 引言 -->
-  <div class="epigraph">经典从不因岁月褪色，反而在时光中愈发璀璨。</div>
+<h2>💕 关于「爱与孤独」的另一种解读</h2>
 
-  <!-- 语录列表 -->
-  
-  <div class="quote-card theme-biographies-border">
-    <div class="quote-text">We are what we choose. 我们就是我们所做选择的总和。</div>
-    <div class="quote-source">—— <span class="author">杰夫·贝索斯</span>《2010年普林斯顿大学毕业演讲》 · 选择 · 人生 · 责任</div>
+<blockquote>其实我们每个人的生活都是一个世界，即使最平凡的人也要为他生活的那个世界而奋斗。<span class="source">—— 路遥《平凡的世界》</span></blockquote>
+
+<p>孤独不是一种缺失，而是一种完整。路遥的文字让我们明白，只有当一个人学会享受独处的时光，才能真正有能力去爱别人。独处时，我们不是在等待什么，而是在成为什么。</p>
+
+<blockquote>爱情是叹息吹起的一阵烟；恋人的眼中有它净化了的火星；恋人的眼泪是它激起的波涛。它又是最智慧的疯狂，哽喉的苦味，沁舌的蜜糖。<span class="source">—— 威廉·莎士比亚《罗密欧与朱丽叶》</span></blockquote>
+
+<p>爱的最深境界，或许是允许对方做自己。威廉·莎士比亚的话触及了爱的本质——爱不是占有，不是改变，而是在理解中成就彼此。这样的爱，既需要勇气，也需要智慧。</p>
+
+<h2>那些文字教会我们的事</h2>
+
+<blockquote>我们曾如此渴望命运的波澜，到最后才发现，人生最曼妙的风景，竟是内心的淡定与从容。<span class="source">—— 杨绛《一百岁感言》</span></blockquote>
+
+<p>人与人之间的相遇，都是一场美丽的意外。杨绛笔下的情感世界提醒我们，珍惜当下的每一次相遇，因为有些人，一旦错过就不再。</p>
+
+<blockquote>世界上只有一种真正的英雄主义，那就是在认清生活的真相后依然热爱生活。<span class="source">—— 罗曼·罗兰《米开朗基罗传》</span></blockquote>
+
+<p>孤独不是一种缺失，而是一种完整。罗曼·罗兰的文字让我们明白，只有当一个人学会享受独处的时光，才能真正有能力去爱别人。独处时，我们不是在等待什么，而是在成为什么。</p>
+
+<h2>💕 关于「爱与孤独」的另一种解读</h2>
+
+<blockquote>孤独没有什么不好，使孤独变得不好的，是因为你害怕孤独。<span class="source">—— 蒋勋《孤独六讲》</span></blockquote>
+
+<p>爱的最深境界，或许是允许对方做自己。蒋勋的话触及了爱的本质——爱不是占有，不是改变，而是在理解中成就彼此。这样的爱，既需要勇气，也需要智慧。</p>
+
+<blockquote>爱是恒久忍耐，又有恩慈；爱是不嫉妒，爱是不自夸，不张狂。<span class="source">—— 使徒保罗《圣经·哥林多前书》</span></blockquote>
+
+<p>人与人之间的相遇，都是一场美丽的意外。使徒保罗笔下的情感世界提醒我们，珍惜当下的每一次相遇，因为有些人，一旦错过就不再。</p>
+
+<p>这些穿越岁月的文字，在今天依然闪烁着智慧的光芒。它们不是答案本身，而是引导我们思考的路标。💕 愿你在生活的旅途中，既能勇敢前行，也能在需要的时候，从文字中找到温暖和力量。</p>
   </div>
-
-  <div class="quote-card theme-biographies-border">
-    <div class="quote-text">风口上的猪都能飞，但风停的时候，最先掉下来的也是猪。</div>
-    <div class="quote-source">—— <span class="author">雷军</span>《雷军公开演讲》 · 风口 · 创业 · 务实</div>
-  </div>
-
-  <div class="quote-card theme-biographies-border">
-    <div class="quote-text">The best way to predict the future is to create it. 预测未来最好的方式就是创造它。</div>
-    <div class="quote-source">—— <span class="author">彼得·德鲁克</span>《彼得·德鲁克管理名言（被广泛引用）》 · 创造 · 行动 · 远见</div>
-  </div>
-
-  <div class="quote-card theme-biographies-border">
-    <div class="quote-text">The biggest risk is not taking any risk. 最大的风险就是不去冒任何风险。</div>
-    <div class="quote-source">—— <span class="author">马克·扎克伯格</span>《马克·扎克伯格公开演讲》 · 冒险 · 勇气 · 创业</div>
-  </div>
-
-  <div class="quote-card theme-biographies-border">
-    <div class="quote-text">We always overestimate the change that will occur in the next two years and underestimate the change that will occur in the next ten. 人们总是高估未来两年的变化，低估未来十年的变化。</div>
-    <div class="quote-source">—— <span class="author">比尔·盖茨</span>《未来之路》 · 远见 · 科技 · 趋势</div>
-  </div>
-
-  <div class="quote-card theme-biographies-border">
-    <div class="quote-text">人们往往高估自己一年能做的事，而低估自己十年能做的事。</div>
-    <div class="quote-source">—— <span class="author">李彦宏</span>《李彦宏内部演讲》 · 远见 · 耐心 · 坚持</div>
-  </div>
-
-  <div class="quote-card theme-biographies-border">
-    <div class="quote-text">人这一辈子，一定要做一件让自己骄傲的事情。</div>
-    <div class="quote-source">—— <span class="author">柳传志</span>《柳传志内部讲话》 · 使命感 · 创业 · 成就</div>
-  </div>
-
-  <div class="quote-card theme-biographies-border">
-    <div class="quote-text">Stay hungry, stay foolish. 求知若饥，虚心若愚。</div>
-    <div class="quote-source">—— <span class="author">史蒂夫·乔布斯</span>《2005年斯坦福大学毕业演讲》 · 求知 · 谦逊 · 创新</div>
-  </div>
-
-  <div class="quote-card theme-biographies-border">
-    <div class="quote-text">既往不恋，纵情向前。</div>
-    <div class="quote-source">—— <span class="author">王兴</span>《美团上市内部信》 · 进取 · 放下 · 前行</div>
-  </div>
-
-  <div class="quote-card theme-biographies-border">
-    <div class="quote-text">Your most unhappy customers are your greatest source of learning. 最不满意的客户是你最好的学习来源。</div>
-    <div class="quote-source">—— <span class="author">比尔·盖茨</span>《比尔·盖茨访谈录》 · 客户 · 学习 · 成长</div>
-  </div>
-
-  <!-- 每日小结 -->
-  <div class="summary">
-    <div class="summary-title">📝 今日小结</div>
-    <p>📜 今日与你分享 10 段关于「人物传记」的文字，来自 杰夫·贝索斯、雷军、彼得·德鲁克、马克·扎克伯格、比尔·盖茨、李彦宏、柳传志、史蒂夫·乔布斯、王兴 等作家。愿这些句子在你需要的时刻，给你一点力量、一点慰藉。</p>
-  </div>
-
-  <!-- 页脚 -->
-  <div class="footer">— 每日一摘 · 用文字温暖你 —</div>
+  <div class="footer">— 每日一摘 · 周末深度 —</div>
 </div>
 </body>
 </html>
